@@ -250,6 +250,107 @@ h2 {
     border-bottom: none;
 }
 
+/* Experience Section */
+.experience-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.experience-card {
+    background: var(--bg);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--border);
+    transition: all 0.3s;
+}
+
+.experience-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.experience-card h3 {
+    font-size: 1.5rem;
+    color: var(--text);
+    margin-bottom: 0.25rem;
+}
+
+.company {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.date {
+    color: var(--text-light);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.experience-details {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-details li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    color: var(--text-light);
+    position: relative;
+    line-height: 1.6;
+}
+
+.experience-details li:before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+/* Education Section */
+.education-card {
+    background: var(--bg);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--border);
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.education-card h3 {
+    font-size: 1.5rem;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+}
+
+.school {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.edu-details {
+    color: var(--text-light);
+}
+
+.location {
+    color: var(--text-light);
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
 /* Contact Section */
 #contact {
     text-align: center;
