@@ -12,6 +12,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Theme Toggle Functionality
+const themeToggle = document.getElementById('theme-toggle');
+const html = document.documentElement;
+
+// Check for saved theme preference or default to light mode
+const currentTheme = localStorage.getItem('theme') || 'light';
+html.setAttribute('data-theme', currentTheme);
+
+themeToggle.addEventListener('click', () => {
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+});
+
 // Add scroll effect to navigation
 const nav = document.querySelector('nav');
 let lastScroll = 0;
@@ -20,7 +36,7 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
     if (currentScroll > 100) {
-        nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+        nav.style.boxShadow = '0 2px 10px var(--shadow)';
     } else {
         nav.style.boxShadow = 'none';
     }
@@ -44,7 +60,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe all project cards and skill categories
-document.querySelectorAll('.project-card, .skill-category').forEach(el => {
+document.querySelectorAll('.project-card, .skill-category, .timeline-item').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
