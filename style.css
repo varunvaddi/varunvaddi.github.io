@@ -50,6 +50,7 @@ nav {
     top: 0;
     z-index: 100;
     padding: 1rem 0;
+    transition: all 0.3s ease;
 }
 
 nav .container {
@@ -165,6 +166,7 @@ nav .container {
 .btn-primary:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(229, 9, 20, 0.4);
 }
 
 .btn-secondary {
@@ -193,6 +195,7 @@ nav .container {
 /* Sections */
 section {
     padding: 5rem 0;
+    transition: background-color 0.3s ease;
 }
 
 section:nth-child(even) {
@@ -232,7 +235,7 @@ h2 {
 
 .project-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px var(--shadow);
 }
 
 .project-card h3 {
@@ -292,6 +295,7 @@ h2 {
     padding: 2rem;
     border-radius: 0.75rem;
     border: 1px solid var(--border);
+    transition: all 0.3s ease;
 }
 
 .skill-category h3 {
@@ -356,7 +360,7 @@ h2 {
     padding: 2rem;
     border-radius: 1rem;
     border: 1px solid var(--border);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px var(--shadow);
     transition: all 0.3s ease;
 }
 
@@ -480,6 +484,7 @@ h2 {
     max-width: 600px;
     margin: 2rem auto;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 .education-card h3 {
