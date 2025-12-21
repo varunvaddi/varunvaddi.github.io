@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Developer Portfolio</title>
+    <title>Varun Vaddi - Data Engineer & Data Scientist</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <a href="#" class="logo">YourName</a>
+            <a href="#" class="logo">Varun Vaddi</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -23,8 +24,8 @@
     <!-- Hero Section -->
     <section id="hero">
         <div class="container">
-            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
-            <p class="subtitle">Full Stack Developer | Problem Solver | Builder</p>
+            <h1>Hi, I'm <span class="highlight">Varun Vaddi</span></h1>
+            <p class="subtitle">Data Engineer | Data Scientist | ML Engineer</p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -36,8 +37,63 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>I'm a passionate developer who loves building clean, functional web applications. With experience in modern JavaScript frameworks and a strong foundation in computer science fundamentals, I enjoy turning complex problems into elegant solutions.</p>
-            <p>Currently seeking opportunities to contribute to innovative projects and grow as a developer.</p>
+            <p>I'm a Data Engineer and Data Scientist with expertise in building scalable data pipelines, machine learning systems, and advanced analytics solutions. Currently completing my Master's in Engineering Data Science at the University of Houston with a 3.7 GPA.</p>
+            <p>With experience at Accenture and Wild Genomics, I've delivered data-driven solutions that have driven millions in revenue growth and transformed raw data into actionable insights. I specialize in end-to-end data pipeline development, NLP, and building production-ready ML systems.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="experience-grid">
+                
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Data Science Intern</h3>
+                            <p class="company">Wild Genomics, CA</p>
+                        </div>
+                        <p class="date">May 2025 - Aug 2025</p>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Built end-to-end Python preprocessing pipeline for high-throughput sequencing data, increasing analysis-ready data from 30% to 80%</li>
+                        <li>Designed similarity-based clustering pipelines at 97-99% identity, reducing redundant data by ~90%</li>
+                        <li>Developed threshold-based classification workflows improving accuracy from 85% to 95%</li>
+                        <li>Automated batch processing reducing runtime by 40% with logging, monitoring, and validation</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Software Engineer</h3>
+                            <p class="company">Accenture, Hyderabad, India</p>
+                        </div>
+                        <p class="date">Sep 2021 - Dec 2023</p>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Optimized Salesforce data systems managing 80M+ records, improving workflow efficiency by 30%</li>
+                        <li>Led data migrations and built CRM Analytics dashboards analyzing conversion metrics, driving $25M in revenue growth</li>
+                        <li>Built KPI dashboards tracking feature impact and closed-won deals, driving 10% lift in conversion</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Data Engineer</h3>
+                            <p class="company">University of Houston, TX</p>
+                        </div>
+                        <p class="date">Jul 2024 - Dec 2025</p>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Automated ETL pipelines for admissions data from multiple sources into PeopleSoft</li>
+                        <li>Ensured accurate, clean, and timely data for enrollment and operational analytics</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -49,46 +105,48 @@
                 
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <h3>Project Name</h3>
-                    <p>Brief description of what this project does and the problem it solves. Keep it concise and impactful.</p>
+                    <h3>NYC Taxi Data Pipeline</h3>
+                    <p>Architected automated Snowflake + dbt + Dockerized Airflow ETL pipeline processing 2M+ NYC taxi records with 37+ validation checks, reducing processing time by 95% and data quality incidents by 90%.</p>
                     <div class="tech-stack">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Snowflake</span>
+                        <span class="tech-tag">dbt</span>
+                        <span class="tech-tag">Airflow</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Python</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" target="_blank" class="link">Live Demo</a>
-                        <a href="#" target="_blank" class="link">GitHub</a>
+                        <a href="https://github.com/varunvaddi" target="_blank" class="link">GitHub</a>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <h3>Project Name</h3>
-                    <p>Another exciting project that demonstrates your skills. Highlight what makes it unique or challenging.</p>
+                    <h3>Customer Review Analytics</h3>
+                    <p>Engineered 45+ NLP-derived features from 42K+ customer reviews. Built interactive Tableau dashboards revealing sentiment trends and performance patterns across Disneyland parks.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Tableau</span>
+                        <span class="tech-tag">Pandas</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" target="_blank" class="link">Live Demo</a>
-                        <a href="#" target="_blank" class="link">GitHub</a>
+                        <a href="https://github.com/varunvaddi" target="_blank" class="link">GitHub</a>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
                 <div class="project-card">
-                    <h3>Project Name</h3>
-                    <p>Describe the third project, focusing on your contributions and the technologies you used.</p>
+                    <h3>Sentiment Analysis with Deep Learning</h3>
+                    <p>Built data preprocessing and feature engineering pipelines for LSTM/GRU models on 70K+ reviews. Conducted cross-dataset evaluation reducing data preparation time by 20%.</p>
                     <div class="tech-stack">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Express</span>
-                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">LSTM</span>
+                        <span class="tech-tag">GRU</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Deep Learning</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" target="_blank" class="link">Live Demo</a>
-                        <a href="#" target="_blank" class="link">GitHub</a>
+                        <a href="https://github.com/varunvaddi" target="_blank" class="link">GitHub</a>
                     </div>
                 </div>
 
@@ -102,32 +160,67 @@
             <h2>Skills & Technologies</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Frontend</h3>
+                    <h3>Programming</h3>
                     <ul>
-                        <li>JavaScript (ES6+)</li>
-                        <li>React / Next.js</li>
-                        <li>HTML5 & CSS3</li>
-                        <li>Tailwind CSS</li>
+                        <li>Python</li>
+                        <li>SQL (MySQL, Oracle)</li>
+                        <li>R</li>
+                        <li>Java</li>
+                        <li>MATLAB</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Backend</h3>
+                    <h3>Data Engineering</h3>
                     <ul>
-                        <li>Node.js / Express</li>
-                        <li>Python / Django</li>
-                        <li>RESTful APIs</li>
-                        <li>GraphQL</li>
+                        <li>Snowflake</li>
+                        <li>dbt</li>
+                        <li>Apache Airflow</li>
+                        <li>Docker & Kubernetes</li>
+                        <li>ETL Pipelines</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Others</h3>
+                    <h3>ML & Data Science</h3>
                     <ul>
-                        <li>Git & GitHub</li>
-                        <li>MongoDB / PostgreSQL</li>
-                        <li>Docker</li>
-                        <li>AWS / Vercel</li>
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>NLP & Transformers</li>
+                        <li>LLM & RAG</li>
+                        <li>Pandas & NumPy</li>
                     </ul>
                 </div>
+                <div class="skill-category">
+                    <h3>Analytics & Visualization</h3>
+                    <ul>
+                        <li>Tableau</li>
+                        <li>Power BI</li>
+                        <li>Advanced Excel</li>
+                        <li>CRM Analytics</li>
+                        <li>SOQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Practices</h3>
+                    <ul>
+                        <li>Git/GitHub</li>
+                        <li>CI/CD</li>
+                        <li>Agile</li>
+                        <li>Salesforce</li>
+                        <li>Cloud Platforms</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-card">
+                <h3>Master of Science in Engineering Data Science</h3>
+                <p class="school">University of Houston, TX</p>
+                <p class="edu-details">GPA: 3.7/4.0 | December 2025</p>
             </div>
         </div>
     </section>
@@ -136,19 +229,20 @@
     <section id="contact">
         <div class="container">
             <h2>Get In Touch</h2>
-            <p>I'm always interested in hearing about new opportunities and projects. Feel free to reach out!</p>
+            <p>I'm actively seeking opportunities in data engineering, data science, and ML engineering roles. Let's connect!</p>
             <div class="contact-links">
-                <a href="mailto:your.email@example.com" class="contact-btn">Email Me</a>
-                <a href="https://github.com/yourusername" target="_blank" class="contact-btn">GitHub</a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-btn">LinkedIn</a>
+                <a href="mailto:varunvaddi30600@gmail.com" class="contact-btn">Email Me</a>
+                <a href="https://www.linkedin.com/in/varunvaddi/" target="_blank" class="contact-btn">LinkedIn</a>
+                <a href="https://github.com/varunvaddi" target="_blank" class="contact-btn">GitHub</a>
             </div>
+            <p class="location">📍 Houston, TX | 📞 (713) 539-6996</p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Your Name. Built with HTML, CSS, and JavaScript.</p>
+            <p>&copy; 2024 Varun Vaddi. Built with HTML, CSS, and JavaScript.</p>
         </div>
     </footer>
 
