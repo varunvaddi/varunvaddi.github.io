@@ -9,9 +9,9 @@ html {
 }
 
 html[data-theme="light"] {
-    --primary: #FF9913;
-    --primary-dark: #E68A00;
-    --primary-light: #FFB13D;
+    --primary: #3b82f6;
+    --primary-dark: #2563eb;
+    --primary-light: #60a5fa;
     --text: #1f2937;
     --text-light: #6b7280;
     --bg: #ffffff;
@@ -20,9 +20,9 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-    --primary: #FF9913;
-    --primary-dark: #FFB13D;
-    --primary-light: #FFC670;
+    --primary: #3b82f6;
+    --primary-dark: #60a5fa;
+    --primary-light: #93c5fd;
     --text: #e5e7eb;
     --text-light: #9ca3af;
     --bg: #141414;
@@ -155,7 +155,7 @@ nav .container {
 .btn-primary:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(255, 153, 19, 0.4);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
 }
 
 .btn-secondary {
@@ -170,15 +170,15 @@ nav .container {
 }
 
 .btn-resume {
-    background: linear-gradient(135deg, #FF9913 0%, #E68A00 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     border: none;
 }
 
 .btn-resume:hover {
-    background: linear-gradient(135deg, #FFB13D 0%, #FF9913 100%);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(255, 153, 19, 0.4);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
 }
 
 /* Sections */
@@ -258,7 +258,7 @@ html[data-theme="dark"] .timeline-content {
 
 .timeline-content:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(255, 153, 19, 0.2);
+    box-shadow: 0 12px 24px rgba(59, 130, 246, 0.2);
     border-color: var(--primary);
 }
 
@@ -376,7 +376,7 @@ html[data-theme="dark"] .timeline-content {
 
 .project-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 30px rgba(255, 153, 19, 0.15);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15);
 }
 
 .project-card h3 {
