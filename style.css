@@ -525,14 +525,30 @@ html[data-theme="dark"] .experience-highlights {
 }
 
 /* Education Section */
+#education .container {
+    max-width: 1200px;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
 .education-card {
     background: var(--bg);
     padding: 2rem;
     border-radius: 0.75rem;
     border: 1px solid var(--border);
-    max-width: 600px;
-    margin: 2rem auto;
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(59, 130, 246, 0.15);
+    border-color: var(--primary);
 }
 
 .education-card h3 {
