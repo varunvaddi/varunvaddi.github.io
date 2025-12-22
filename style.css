@@ -518,6 +518,11 @@ html[data-theme="dark"] .experience-highlights {
     padding: 0.5rem 0;
     color: var(--text-light);
     border-bottom: 1px solid var(--border);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .skill-category li:last-child {
