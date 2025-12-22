@@ -198,6 +198,7 @@ h2 {
     margin: 0 auto 1rem;
     color: var(--text-light);
     line-height: 1.8;
+    text-align: justify;
 }
 
 /* Experience Section - Timeline Design */
@@ -333,6 +334,7 @@ html[data-theme="dark"] .experience-highlights {
     line-height: 1.6;
     border-left: 2px solid var(--bg-alt);
     margin-left: 0.5rem;
+    text-align: justify;
 }
 
 .experience-details li:before {
@@ -342,6 +344,83 @@ html[data-theme="dark"] .experience-highlights {
     color: var(--primary);
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+/* Recommendations Section */
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recommendation-card {
+    background: var(--bg);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--border);
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.recommendation-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(59, 130, 246, 0.15);
+    border-color: var(--primary);
+}
+
+.quote-icon {
+    font-size: 4rem;
+    color: var(--primary);
+    opacity: 0.2;
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-family: Georgia, serif;
+}
+
+.recommendation-text {
+    color: var(--text-light);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-style: italic;
+    text-align: justify;
+}
+
+.recommender {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--border);
+}
+
+.recommender-info h4 {
+    color: var(--text);
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+}
+
+.recommender-title {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.linkedin-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.linkedin-link:hover {
+    color: var(--primary-dark);
 }
 
 /* Projects Grid */
@@ -374,6 +453,7 @@ html[data-theme="dark"] .experience-highlights {
 .project-card p {
     color: var(--text-light);
     margin-bottom: 1.5rem;
+    text-align: justify;
 }
 
 .tech-stack {
@@ -548,6 +628,10 @@ html[data-theme="dark"] footer {
     
     .projects-grid,
     .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .recommendations-grid {
         grid-template-columns: 1fr;
     }
     
