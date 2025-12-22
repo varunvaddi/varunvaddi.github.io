@@ -55,7 +55,7 @@ const observer = new IntersectionObserver((entries) => {
     rootMargin: '0px 0px -100px 0px'
 });
 
-document.querySelectorAll('.project-card, .skill-category, .timeline-item').forEach(el => {
+document.querySelectorAll('.project-card, .skill-category, .timeline-item, .recommendation-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
