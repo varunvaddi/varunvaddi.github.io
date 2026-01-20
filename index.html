@@ -223,8 +223,8 @@
             <div class="projects-grid">
                 
                 <div class="project-card">
-                    <h3>NYC Taxi Data Pipeline</h3>
-                    <p>Architected an automated Snowflake, dbt, Dockerized Airflow, Kafka ETL pipeline processing 8.6M+ NYC taxi records with 37+ validation checks, reducing processing time from 6 hours to <30 seconds and data quality incidents by 90%. Enabled real-time streaming with <5-minute latency, built interactive Tableau dashboards tracking $180M+ quarterly revenue, and implemented monitoring that detected 3,400+ edge cases, uncovering peak demand patterns and payment optimization insights.</p>
+                    <h3>Urban Mobility Analytics Platform</h3>
+                    <p>Architected hybrid batch-streaming data platform processing 8.6M+ NYC taxi records across 3 months, achieving 95% processing time reduction (6 hours → 23 seconds) through Snowflake multi-layer architecture, dbt incremental materialization, and Dockerized Airflow orchestration with 37+ automated validation checks maintaining 99.88% data quality. Implemented end-to-end ETL pipeline with staging → intermediate → marts transformation layers, utilizing epoch timestamp conversion, business logic enrichment, and automated edge case flagging identifying 3,400+ anomalies (short-high-fare airport pickups, revenue outliers, suspicious long-duration trips). Integrated Apache Kafka streaming architecture reducing data latency from 24-hour batch cycles to <5 minutes real-time ingestion via Python producer-consumer pattern processing 10 messages/sec with 100-record batching. Built 6 interactive Tableau dashboards revealing critical business patterns: 30% demand concentration during 5-6 PM peak hours, 18% revenue premium on credit card transactions ($27.85 vs $23.52), and Upper East Side-Midtown corridor dominance across 8.45M yellow and 128K green taxi trips totaling $180M+ quarterly revenue.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Snowflake</span>
                         <span class="tech-tag">dbt</span>
@@ -241,7 +241,7 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>Google Ads policy Compliance RAG</h3>
+                    <h3>Ads Policy Compliance Assistant</h3>
                     <p>Engineered production-grade RAG system for automated Google Ads policy enforcement, achieving 80% decision accuracy through hybrid retrieval combining BM25 keyword search, BGE-large semantic embeddings (1024-dim), and cross-encoder reranking across 341 policy chunks from 25 regulatory documents. Implemented end-to-end pipeline processing policies in 65 seconds with 78% Recall@5, reducing manual review time from 5-10 minutes to <1 second per ad. Integrated Google Gemini LLM with Pydantic schemas for structured JSON output including decision classification, confidence scoring, policy citations, and risk factor extraction, achieving zero hallucinations and 100% citation transparency. System handles 341 clean chunks via FAISS vector store with <350ms query latency at zero cost using free tiers.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">RAG</span>
@@ -258,7 +258,7 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>Customer Review Analytics</h3>
+                    <h3>Customer Experience Analytics Platform</h3>
                     <p>Customer Review Analytics project analyzing 41K+ TripAdvisor reviews from Disneyland parks in California, Paris, and Hong Kong using NLP techniques to extract sentiment and contextual insights. Engineered 45+ features including sentiment polarity, review length metrics, and keyword-based indicators (e.g., wait time, cleanliness, staff behavior) to enrich unstructured text data. Built fully interactive Tableau dashboards with custom filters and drill-downs by park location, reviewer origin, visit timeframe, and sentiment category. Visualized sentiment trends, review volume over time, and comparative performance using maps, bar charts, line graphs, and heatmaps. Translated large-scale customer feedback into actionable insights to support experience optimization and data-driven business decision</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Python</span>
