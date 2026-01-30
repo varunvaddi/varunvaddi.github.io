@@ -158,7 +158,7 @@ nav .container {
 
 .btn {
     padding: 0.875rem 2rem;
-    border-radius: 2rem;
+    border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s;
@@ -620,7 +620,7 @@ html[data-theme="dark"] .experience-highlights {
     background: var(--primary);
     color: white;
     text-decoration: none;
-    border-radius: 2rem;
+    border-radius: 50px;
     font-weight: 600;
     transition: all 0.3s;
 }
