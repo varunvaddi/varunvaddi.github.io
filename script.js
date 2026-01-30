@@ -1,3 +1,49 @@
+// Typewriter Effect
+const phrases = [
+    "I am a Data Scientist",
+    "I build ML/AI Models",
+    "I turn Ideas into Code",
+    "I create Data Pipelines",
+    "I solve complex problems"
+];
+
+let phraseIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeWriter() {
+    const typewriterElement = document.getElementById('typewriter');
+    if (!typewriterElement) return;
+    
+    const currentPhrase = phrases[phraseIndex];
+    
+    if (isDeleting) {
+        typewriterElement.textContent = currentPhrase.substring(0, charIndex - 1);
+        charIndex--;
+    } else {
+        typewriterElement.textContent = currentPhrase.substring(0, charIndex + 1);
+        charIndex++;
+    }
+    
+    let typeSpeed = isDeleting ? 50 : 100;
+    
+    if (!isDeleting && charIndex === currentPhrase.length) {
+        typeSpeed = 2000; // Pause at end
+        isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        typeSpeed = 500; // Pause before next phrase
+    }
+    
+    setTimeout(typeWriter, typeSpeed);
+}
+
+// Start typewriter effect when page loads
+window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(typeWriter, 1000);
+});
+
 // Theme Toggle
 const themeToggle = document.getElementById('theme-toggle');
 const html = document.documentElement;
