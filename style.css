@@ -120,39 +120,33 @@ nav .container {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     color: var(--text);
+    min-height: 4rem;
 }
 
 .highlight {
     color: var(--primary);
 }
 
-.subtitle {
-    font-size: 1.5rem;
-    color: var(--text-light);
-    margin-bottom: 2rem;
-    min-height: 2.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #typed-text {
-    font-size: 1.5rem;
-    color: var(--primary);
-    font-weight: 600;
-    position: relative;
+    color: var(--text);
 }
 
 #typed-text::after {
     content: '|';
     color: var(--primary);
     animation: blink 0.7s infinite;
-    margin-left: 2px;
+    margin-left: 5px;
 }
 
 @keyframes blink {
     0%, 50% { opacity: 1; }
     51%, 100% { opacity: 0; }
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
 }
 
 .cta-buttons {
@@ -663,10 +657,6 @@ html[data-theme="dark"] footer {
     }
     
     .subtitle {
-        font-size: 1.25rem;
-    }
-
-    #typed-text {
         font-size: 1.25rem;
     }
     
