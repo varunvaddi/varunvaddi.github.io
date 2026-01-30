@@ -1,9 +1,10 @@
 // Typewriter Effect
 const phrases = [
+    "Hi, I'm Varun Vaddi",
     "I am a Data Scientist",
     "I build ML/AI Models",
-    "I create Data Pipelines",
-    "I solve complex problems"
+    "I create ETL Pipelines",
+    "I love to solve complex problems"
 ];
 
 let currentPhraseIndex = 0;
