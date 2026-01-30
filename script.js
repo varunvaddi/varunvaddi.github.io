@@ -2,45 +2,59 @@
 const phrases = [
     "I am a Data Scientist",
     "I build ML/AI Models",
-    "I turn Ideas into Code",
     "I create Data Pipelines",
     "I solve complex problems"
 ];
 
-let phraseIndex = 0;
-let charIndex = 0;
+let currentPhraseIndex = 0;
+let currentCharIndex = 0;
 let isDeleting = false;
+let typingSpeed = 100;
 
-function typeWriter() {
-    const typewriterElement = document.getElementById('typewriter');
-    if (!typewriterElement) {
-        console.log('Typewriter element not found');
+function typeText() {
+    const typedTextElement = document.getElementById('typed-text');
+    
+    if (!typedTextElement) {
+        console.error('typed-text element not found!');
         return;
     }
-    
-    const currentPhrase = phrases[phraseIndex];
-    
+
+    const currentPhrase = phrases[currentPhraseIndex];
+
     if (isDeleting) {
-        typewriterElement.textContent = currentPhrase.substring(0, charIndex - 1);
-        charIndex--;
+        // Remove character
+        typedTextElement.textContent = currentPhrase.substring(0, currentCharIndex - 1);
+        currentCharIndex--;
+        typingSpeed = 50;
     } else {
-        typewriterElement.textContent = currentPhrase.substring(0, charIndex + 1);
-        charIndex++;
+        // Add character
+        typedTextElement.textContent = currentPhrase.substring(0, currentCharIndex + 1);
+        currentCharIndex++;
+        typingSpeed = 100;
     }
-    
-    let typeSpeed = isDeleting ? 50 : 100;
-    
-    if (!isDeleting && charIndex === currentPhrase.length) {
-        typeSpeed = 2000; // Pause at end
+
+    // If word is complete
+    if (!isDeleting && currentCharIndex === currentPhrase.length) {
+        // Pause at end of phrase
+        typingSpeed = 2000;
         isDeleting = true;
-    } else if (isDeleting && charIndex === 0) {
+    } 
+    // If word is deleted
+    else if (isDeleting && currentCharIndex === 0) {
         isDeleting = false;
-        phraseIndex = (phraseIndex + 1) % phrases.length;
-        typeSpeed = 500; // Pause before next phrase
+        // Move to next phrase
+        currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+        typingSpeed = 500;
     }
-    
-    setTimeout(typeWriter, typeSpeed);
+
+    setTimeout(typeText, typingSpeed);
 }
+
+// Initialize typewriter on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Start typing after a short delay
+    setTimeout(typeText, 500);
+});
 
 // Theme Toggle
 const themeToggle = document.getElementById('theme-toggle');
@@ -105,12 +119,3 @@ document.querySelectorAll('.project-card, .skill-category, .timeline-item, .reco
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
 });
-
-// Start typewriter when DOM is ready
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-        setTimeout(typeWriter, 500);
-    });
-} else {
-    setTimeout(typeWriter, 500);
-}
