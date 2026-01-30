@@ -131,16 +131,23 @@ nav .container {
     color: var(--text-light);
     margin-bottom: 2rem;
     min-height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.typewriter {
+#typed-text {
+    font-size: 1.5rem;
     color: var(--primary);
     font-weight: 600;
+    position: relative;
 }
 
-.cursor {
+#typed-text::after {
+    content: '|';
     color: var(--primary);
     animation: blink 0.7s infinite;
+    margin-left: 2px;
 }
 
 @keyframes blink {
@@ -656,6 +663,10 @@ html[data-theme="dark"] footer {
     }
     
     .subtitle {
+        font-size: 1.25rem;
+    }
+
+    #typed-text {
         font-size: 1.25rem;
     }
     
