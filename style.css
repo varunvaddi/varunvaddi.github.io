@@ -37,7 +37,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -65,6 +65,11 @@ nav .container {
     font-weight: 700;
     color: var(--primary);
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+.logo:hover {
+    color: var(--primary-dark);
 }
 
 .nav-links {
@@ -125,6 +130,22 @@ nav .container {
     font-size: 1.5rem;
     color: var(--text-light);
     margin-bottom: 2rem;
+    min-height: 2.5rem;
+}
+
+.typewriter {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.cursor {
+    color: var(--primary);
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
 }
 
 .cta-buttons {
@@ -194,7 +215,7 @@ h2 {
 
 #about p {
     font-size: 1.125rem;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto 1rem;
     color: var(--text-light);
     line-height: 1.8;
@@ -204,7 +225,7 @@ h2 {
 /* Experience Section - Timeline Design */
 .timeline {
     position: relative;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 3rem auto;
     padding-left: 2rem;
 }
@@ -352,7 +373,7 @@ html[data-theme="dark"] .experience-highlights {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
-    max-width: 1000px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -522,7 +543,6 @@ html[data-theme="dark"] .experience-highlights {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .skill-category li:last-child {
@@ -531,7 +551,7 @@ html[data-theme="dark"] .experience-highlights {
 
 /* Education Section */
 #education .container {
-    max-width: 1200px;
+    max-width: 1400px;
 }
 
 .education-grid {
