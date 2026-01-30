@@ -13,7 +13,10 @@ let isDeleting = false;
 
 function typeWriter() {
     const typewriterElement = document.getElementById('typewriter');
-    if (!typewriterElement) return;
+    if (!typewriterElement) {
+        console.log('Typewriter element not found');
+        return;
+    }
     
     const currentPhrase = phrases[phraseIndex];
     
@@ -38,11 +41,6 @@ function typeWriter() {
     
     setTimeout(typeWriter, typeSpeed);
 }
-
-// Start typewriter effect when page loads
-window.addEventListener('DOMContentLoaded', () => {
-    setTimeout(typeWriter, 1000);
-});
 
 // Theme Toggle
 const themeToggle = document.getElementById('theme-toggle');
@@ -101,9 +99,18 @@ const observer = new IntersectionObserver((entries) => {
     rootMargin: '0px 0px -100px 0px'
 });
 
-document.querySelectorAll('.project-card, .skill-category, .timeline-item, .recommendation-card').forEach(el => {
+document.querySelectorAll('.project-card, .skill-category, .timeline-item, .recommendation-card, .education-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
 });
+
+// Start typewriter when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(typeWriter, 500);
+    });
+} else {
+    setTimeout(typeWriter, 500);
+}
