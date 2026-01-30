@@ -10,7 +10,7 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <a href="#" class="logo">Varun Vaddi</a>
+            <a href="#hero" class="logo">Varun Vaddi</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -29,7 +29,10 @@
     <section id="hero">
         <div class="container">
             <h1>Hi, I'm <span class="highlight">Varun Vaddi</span></h1>
-            <p class="subtitle">Data Scientist | 4+ years in FinTech, product analytics | UH '25 </p>
+            <p class="subtitle">
+                <span class="typewriter" id="typewriter"></span>
+                <span class="cursor">|</span>
+            </p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="VarunVaddi-FT-Resume-ADS.pdf" download class="btn btn-resume">Download Resume</a>
@@ -42,7 +45,7 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-                <p>I’m a Data Scientist & Data Engineer focused on building scalable data products that turn complex data into measurable business impact. I combine machine learning, analytics, and robust data pipelines to deliver end-to-end solutions—from raw data to production-ready insights.</p>
+                <p>I'm a Data Scientist & Data Engineer focused on building scalable data products that turn complex data into measurable business impact. I combine machine learning, analytics, and robust data pipelines to deliver end-to-end solutions—from raw data to production-ready insights.</p>
                 <p>I earned my M.S. in Data Science from the University of Houston (GPA: 3.7) and have experience at Accenture and Wild Genomics, where I designed and deployed end-to-end data pipelines, trained ML/NLP models, and implemented production systems that supported decision-making and contributed to multi-million-dollar business impact.</p>
                 <p>I specialize in applied ML, data engineering, and experimentation, with a strong focus on scalability, reliability, and translating business problems into actionable data solutions. I thrive at the intersection of data, product, and engineering, building systems that teams can trust and scale.</p>
             </div>
@@ -216,6 +219,44 @@
         </div>
     </section>
 
+    <!-- Recommendations Section -->
+    <section id="recommendations">
+        <div class="container">
+            <h2>Recommendations</h2>
+            <div class="recommendations-grid">
+                
+                <div class="recommendation-card">
+                    <div class="quote-icon">"</div>
+                    <p class="recommendation-text">
+                        I had the pleasure of working with Varun during his internship at Wild Genomics as a Data Science Intern. From day one, Varun impressed us with his technical acumen, professionalism, and eagerness to contribute meaningfully to our mission. He developed and optimized bioinformatics pipelines for complex environmental DNA datasets, demonstrating strong skills in Python, R, and machine learning. What stood out most was Varun's ability to learn quickly, adapt to new challenges, and consistently deliver results. He brought positive energy to the team and demonstrated strong initiative while remaining collaborative. I wholeheartedly recommend him to any organization looking for a talented and driven data scientist
+                    </p>
+                    <div class="recommender">
+                        <div class="recommender-info">
+                            <h4>Eirik Torheim</h4>
+                            <p class="recommender-title">CEO, Wild Genomics</p>
+                            <a href="http://linkedin.com/in/eiriktorheim/" target="_blank" class="linkedin-link">View on LinkedIn →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="quote-icon">"</div>
+                    <p class="recommendation-text">
+                        It's been an absolute pleasure working with Varun during his internship at Wild Genomics. Varun approached his role with professionalism, curiosity, and a strong drive to learn. He led the design and implementation of an end-to-end bioinformatics pipeline for processing complex, multi-marker eDNA sequencing datasets, delivering a solution that is both robust and scalable. Varun stood out for his teamwork, clear communication, and creative problem-solving. The pipeline he developed is already revealing species-level insights from airborne eDNA that traditional methods would struggle to capture.
+                    </p>
+                    <div class="recommender">
+                        <div class="recommender-info">
+                            <h4>Bilgenur Baloglu</h4>
+                            <p class="recommender-title">CSO, Wild Genomics</p>
+                            <a href="https://www.linkedin.com/in/bilgenur-baloglu/" target="_blank" class="linkedin-link">View on LinkedIn →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects">
         <div class="container">
@@ -381,45 +422,6 @@
         </div>
     </section>
 
-    <!-- Recommendations Section -->
-    <section id="recommendations">
-        <div class="container">
-            <h2>Recommendations</h2>
-            <div class="recommendations-grid">
-                
-                <div class="recommendation-card">
-                    <div class="quote-icon">"</div>
-                    <p class="recommendation-text">
-                        I had the pleasure of working with Varun during his internship at Wild Genomics as a Data Science Intern. From day one, Varun impressed us with his technical acumen, professionalism, and eagerness to contribute meaningfully to our mission. He developed and optimized bioinformatics pipelines for complex environmental DNA datasets, demonstrating strong skills in Python, R, and machine learning. What stood out most was Varun's ability to learn quickly, adapt to new challenges, and consistently deliver results. He brought positive energy to the team and demonstrated strong initiative while remaining collaborative. I wholeheartedly recommend him to any organization looking for a talented and driven data scientist
-                    </p>
-                    <div class="recommender">
-                        <div class="recommender-info">
-                            <h4>Eirik Torheim</h4>
-                            <p class="recommender-title">CEO, Wild Genomics</p>
-                            <a href="http://linkedin.com/in/eiriktorheim/" target="_blank" class="linkedin-link">View on LinkedIn →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="recommendation-card">
-                    <div class="quote-icon">"</div>
-                    <p class="recommendation-text">
-                        It's been an absolute pleasure working with Varun during his internship at Wild Genomics. Varun approached his role with professionalism, curiosity, and a strong drive to learn. He led the design and implementation of an end-to-end bioinformatics pipeline for processing complex, multi-marker eDNA sequencing datasets, delivering a solution that is both robust and scalable. Varun stood out for his teamwork, clear communication, and creative problem-solving. The pipeline he developed is already revealing species-level insights from airborne eDNA that traditional methods would struggle to capture.
-                    </p>
-                    <div class="recommender">
-                        <div class="recommender-info">
-                            <h4>Bilgenur Baloglu</h4>
-                            <p class="recommender-title">CSO, Wild Genomics</p>
-                            <a href="https://www.linkedin.com/in/bilgenur-baloglu/" target="_blank" class="linkedin-link">View on LinkedIn →</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
