@@ -21,14 +21,14 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-    --primary: #D4AF37;           /* Rich Gold */
-    --primary-dark: #F0C75E;      /* Brighter Gold for hover */
-    --primary-light: #B8941F;     /* Darker Gold */
-    --text: #E8E1D5;              /* Warm Off-White Text */
-    --text-light: #B8AFA0;        /* Muted Tan Text */
-    --bg: #1C1410;                /* Rich Dark Brown */
-    --bg-alt: #2A1F1A;            /* Slightly Lighter Dark Brown */
-    --border: #3D2F26;            /* Dark Brown Border */
+    --primary: #F97316;           /* Claude's Orange Accent */
+    --primary-dark: #FB923C;      /* Lighter Orange for hover */
+    --primary-light: #EA580C;     /* Darker Orange */
+    --text: #E5E5E5;              /* Light Gray Text */
+    --text-light: #A3A3A3;        /* Muted Gray Text */
+    --bg: #212121;                /* Dark Gray Background (like Claude) */
+    --bg-alt: #2A2A2A;            /* Slightly Lighter Gray */
+    --border: #3F3F3F;            /* Gray Border */
 }
 
 body {
