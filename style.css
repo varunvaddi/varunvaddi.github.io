@@ -327,6 +327,26 @@ html[data-theme="dark"] .experience-highlights {
     border: 1px solid var(--border);
 }
 
+
+/* Make cards contrast with section backgrounds */
+section:nth-child(odd) .project-card,
+section:nth-child(odd) .education-card,
+section:nth-child(odd) .timeline-content,
+section:nth-child(odd) .recommendation-card,
+section:nth-child(odd) .skill-category {
+    background: var(--bg-alt);
+}
+
+section:nth-child(even) .project-card,
+section:nth-child(even) .education-card,
+section:nth-child(even) .timeline-content,
+section:nth-child(even) .recommendation-card,
+section:nth-child(even) .skill-category {
+    background: var(--bg);
+}
+
+
+
 .highlight-item {
     text-align: center;
 }
