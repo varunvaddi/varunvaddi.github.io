@@ -8,24 +8,27 @@ html {
     scroll-behavior: smooth;
 }
 
+
 html[data-theme="light"] {
-    --primary: #3b82f6;
-    --primary-dark: #2563eb;
-    --text: #1f2937;
-    --text-light: #6b7280;
-    --bg: #ffffff;
-    --bg-alt: #f9fafb;
-    --border: #e5e7eb;
+    --primary: #6B4423;           /* Rich Chocolate Brown */
+    --primary-dark: #4A2C1A;      /* Darker Chocolate */
+    --primary-light: #8B5A3C;     /* Light Chocolate */
+    --text: #2D2416;              /* Dark Brown Text */
+    --text-light: #5C4A3A;        /* Medium Brown Text */
+    --bg: #F5F1E8;                /* Warm Beige Background */
+    --bg-alt: #EAE3D5;            /* Slightly Darker Beige */
+    --border: #D4C4B0;            /* Tan Border */
 }
 
 html[data-theme="dark"] {
-    --primary: #3b82f6;
-    --primary-dark: #60a5fa;
-    --text: #e5e7eb;
-    --text-light: #9ca3af;
-    --bg: #0f0f0f;
-    --bg-alt: #1a1a1a;
-    --border: #2d2d2d;
+    --primary: #C0C0C0;           /* Silver Accent */
+    --primary-dark: #E8E8E8;      /* Lighter Silver for hover */
+    --primary-light: #A8A8A8;     /* Darker Silver */
+    --text: #E8E1D5;              /* Warm Off-White Text */
+    --text-light: #B8AFA0;        /* Muted Tan Text */
+    --bg: #1C1410;                /* Rich Dark Brown (not black) */
+    --bg-alt: #2A1F1A;            /* Slightly Lighter Dark Brown */
+    --border: #3D2F26;            /* Dark Brown Border */
 }
 
 body {
