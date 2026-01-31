@@ -21,14 +21,14 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-    --primary: #F97316;           /* Claude's Orange Accent */
-    --primary-dark: #FB923C;      /* Lighter Orange for hover */
-    --primary-light: #EA580C;     /* Darker Orange */
+    --primary: #b87333;           /* Mahindra Copper Accent */
+    --primary-dark: #d4924a;      /* Lighter Copper for hover */
+    --primary-light: #a0622b;     /* Darker Copper */
     --text: #E5E5E5;              /* Light Gray Text */
     --text-light: #A3A3A3;        /* Muted Gray Text */
-    --bg: #2B2421;                /* Dark Gray with Brown Undertone */
-    --bg-alt: #1F1B18;            /* Slightly Lighter Gray-Brown */
-    --border: #3D342E;            /* Brown-Gray Border */
+    --bg: #0a2e2f;                /* Deep Teal Background */
+    --bg-alt: #0f3d3e;            /* Slightly Lighter Teal */
+    --border: #14494a;            /* Teal Border */
 }
 
 
