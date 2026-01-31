@@ -539,6 +539,7 @@ html[data-theme="dark"] .experience-highlights {
     border-radius: 1rem;
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    text-align: center;
     flex: 0 0 calc(33.333% - 0.67rem); /* Accounts for gap */
 }
 
