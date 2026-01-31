@@ -599,6 +599,10 @@ html[data-theme="dark"] .experience-highlights {
     border: 1px solid var(--border);
     text-align: center;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .education-card:hover {
