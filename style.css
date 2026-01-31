@@ -205,11 +205,11 @@ section {
     padding: 5rem 0;
     transition: background-color 0.3s ease;
 }
-/* -- COMMENTED TO ZIG-ZAG 
+
 section:nth-child(even) {
     background: var(--bg-alt);
 }
-*/
+
 h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
