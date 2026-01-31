@@ -558,6 +558,8 @@ html[data-theme="dark"] .experience-highlights {
     font-size: 1.25rem;
     margin-bottom: 1rem;
     color: var(--primary);
+    text-align: center;
+
 }
 
 .skill-category ul {
