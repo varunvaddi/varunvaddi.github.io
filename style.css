@@ -13,6 +13,7 @@ html[data-theme="light"] {
     --primary: #6B4423;           /* Rich Chocolate Brown */
     --primary-dark: #4A2C1A;      /* Darker Chocolate */
     --resume: #000000;
+    --resume-text: white;
     --primary-light: #8B5A3C;     /* Light Chocolate */
     --text: #2D2416;              /* Dark Brown Text */
     --text-light: #5C4A3A;        /* Medium Brown Text */
@@ -24,7 +25,8 @@ html[data-theme="light"] {
 html[data-theme="dark"] {
     --primary: #b87333;           /* Mahindra Copper Accent */
     --primary-dark: #d4924a;      /* Lighter Copper for hover */
-    --resume: #000000;
+    --resume: #ffffff;
+    --resume-text: #000000;
     --primary-light: #a0622b;     /* Darker Copper */
     --text: #E5E5E5;              /* Light Gray Text */
     --text-light: #A3A3A3;        /* Muted Gray Text */
@@ -194,7 +196,7 @@ nav .container {
 
 .btn-resume {
     background: var(--resume); /*linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
-    color: white;
+    color: var(--resume-text);
     border: none;
 }
 
