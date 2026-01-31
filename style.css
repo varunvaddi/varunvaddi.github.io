@@ -510,8 +510,8 @@ html[data-theme="dark"] .experience-highlights {
 }
 
 .tech-tag {
-    background: var(--bg-alt);
-    color: var(--primary);
+    background: var(--primary); /*swapped*/
+    color: var(--bg-alt);
     padding: 0.25rem 0.75rem;
     border-radius: 1rem;
     font-size: 0.875rem;
