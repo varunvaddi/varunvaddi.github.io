@@ -532,7 +532,7 @@ html[data-theme="dark"] .experience-highlights {
     color: var(--primary);
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.65rem;
     padding: 0.5rem 1rem;
     background: white;
     border: 1px solid #e0e0e0;
