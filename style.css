@@ -21,12 +21,12 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-    --primary: #C0C0C0;           /* Silver Accent */
-    --primary-dark: #E8E8E8;      /* Lighter Silver for hover */
-    --primary-light: #A8A8A8;     /* Darker Silver */
+    --primary: #D4AF37;           /* Rich Gold */
+    --primary-dark: #F0C75E;      /* Brighter Gold for hover */
+    --primary-light: #B8941F;     /* Darker Gold */
     --text: #E8E1D5;              /* Warm Off-White Text */
     --text-light: #B8AFA0;        /* Muted Tan Text */
-    --bg: #1C1410;                /* Rich Dark Brown (not black) */
+    --bg: #1C1410;                /* Rich Dark Brown */
     --bg-alt: #2A1F1A;            /* Slightly Lighter Dark Brown */
     --border: #3D2F26;            /* Dark Brown Border */
 }
@@ -316,13 +316,13 @@ h2 {
     gap: 1rem;
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background: linear-gradient(135deg, #F9F6F0 0%, #F0EAE0 100%);
+    background: rgba(212, 175, 55, 0.1);  /* Light gold tint for light mode */
     border-radius: 0.75rem;
     border: 1px solid var(--border);
 }
 
 html[data-theme="dark"] .experience-highlights {
-    background: linear-gradient(135deg, #2A1F1A 0%, #3D2F26 100%);
+    background: rgba(212, 175, 55, 0.08);  /* Subtle gold tint for dark mode */
     border: 1px solid var(--border);
 }
 
