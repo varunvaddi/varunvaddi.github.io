@@ -533,10 +533,10 @@ html[data-theme="dark"] .experience-highlights {
     text-decoration: none;
     font-weight: 600;
     font-size: 0.65rem;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 0.75rem;
     background: white;
     border: 1px solid #e0e0e0;
-    border-radius: 6px;
+    border-radius: 1rem;
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
     flex: 0 0 calc(33.333% - 0.67rem); /* Accounts for gap */
