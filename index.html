@@ -225,6 +225,11 @@
                 <div class="project-card">
                     <h3>Urban Mobility Analytics Platform</h3>
                     <p><strong><em>Domain: Travel & Hospitality</em></strong></p>
+                    <div class="project-links">
+                        <a href="https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page" target="_blank" rel="noopener noreferrer" class="link">Dataset→</a>
+                        <a href="https://github.com/varunvaddi/nyc_taxi_etl" target="_blank" rel="noopener noreferrer" class="link">GitHub→</a>
+                        <a href="https://public.tableau.com/app/profile/varun.vaddi/viz/NYCTaxiJan-Mar2025/Overview#1" target="_blank" rel="noopener noreferrer" class="link">Dashboard→</a>
+                    </div>
                     <p>Built an end-to-end analytics pipeline for NYC taxi operations (8.6M+ trips, $180M+ quarterly revenue), combining batch and streaming architectures to enable real-time demand forecasting and dynamic pricing optimization.</p>
                     <p><b>Performance:</b> Reduced feature prep time by 95% (6 hours → 23 seconds) using Snowflake, dbt, and Dockerized Airflow with 37 automated validations maintaining 99.88% data quality</p>
                     <p><b>Real-time Integration:</b> Kafka streaming cut ingestion latency from 24-hour batches to <5 minutes, processing 10 msgs/sec for live demand signals.</p>
@@ -237,16 +242,16 @@
                         <span class="tech-tag">Kafka</span>
                         <span class="tech-tag">Tableau</span>
                     </div>
-                        <div class="project-links">
-                            <a href="https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page" target="_blank" rel="noopener noreferrer" class="link">Dataset→</a>
-                            <a href="https://github.com/varunvaddi/nyc_taxi_etl" target="_blank" rel="noopener noreferrer" class="link">GitHub→</a>
-                            <a href="https://public.tableau.com/app/profile/varun.vaddi/viz/NYCTaxiJan-Mar2025/Overview#1" target="_blank" rel="noopener noreferrer" class="link">Dashboard→</a>
-                        </div>
+                    
                 </div>
 
                 <div class="project-card">
                     <h3>Ads Policy Compliance Assistant</h3>
                     <p><strong><em>Domain: Media & Tech</em></strong></p>
+                    <div class="project-links">
+                        <a href="https://support.google.com/adspolicy/topic/1626336" target="_blank" class="link">Dataset→</a>
+                        <a href="https://github.com/varunvaddi/Google-Ads-Policy-RAG" target="_blank" class="link">GitHub→</a>
+                    </div>
                     <p>Built an AI-powered RAG system for digital advertising compliance, automating Google Ads policy review across 341 regulatory chunks from 25 documents to enable scalable, real-time ad moderation</p>
                     <p><b>Performance:</b> Hybrid retrieval (BM25 + BGE embeddings + cross-encoder reranking) achieved 80% accuracy and 78% Recall@5, reducing review time from 5-10 minutes to <1 second per ad with <350ms query latency.</p>
                     <p><b>LLM Integration:</b> Gemini-powered structured outputs (Pydantic schemas) delivered zero hallucinations, 100% citation transparency, and automated risk scoring with confidence intervals.</p>
@@ -259,15 +264,16 @@
                         <span class="tech-tag">Web Scraping</span>
                         <span class="tech-tag">Python</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://support.google.com/adspolicy/topic/1626336" target="_blank" class="link">Dataset→</a>
-                        <a href="https://github.com/varunvaddi/Google-Ads-Policy-RAG" target="_blank" class="link">GitHub→</a>
-                    </div>
+                    
                 </div>
 
                 <div class="project-card">
                     <h3>Grocery ML Platform (In Progress)</h3>
                     <p><strong><em>Domain: Retail</em></strong></p>
+                    <div class="project-links">
+                        <a href="https://www.kaggle.com/datasets/yasserh/instacart-online-grocery-basket-analysis-dataset" target="_blank" class="link">Dataset→</a>
+                        <a href="https://github.com/varunvaddi/instacart-smart-cart" target="_blank" class="link">GitHub→</a>
+                    </div>
                     <p>Building an end-to-end ML platform for retail grocery analytics using the Instacart dataset on Azure, combining demand forecasting, product recommendations, and customer segmentation to optimize inventory and personalization.</p>
                     <p><b>Tech Stack:</b> Azure Data Lake Gen2 + Databricks (PySpark 3.5, Delta Lake) for scalable data processing with ACID transactions and time travel. Great Expectations for data quality validation, MLflow for experiment tracking.</p>
                     <p><b>ML Pipeline:</b> XGBoost for classification tasks, Spark ALS for collaborative filtering recommendations, and Databricks Feature Store for centralized feature management and reuse.</p>
@@ -278,15 +284,17 @@
                         <span class="tech-tag">Apache Spark</span>
                         <span class="tech-tag">MLflow</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://www.kaggle.com/datasets/yasserh/instacart-online-grocery-basket-analysis-dataset" target="_blank" class="link">Dataset→</a>
-                        <a href="https://github.com/varunvaddi/instacart-smart-cart" target="_blank" class="link">GitHub→</a>
-                    </div>
+                    
                 </div>
                         
                 <div class="project-card">
                     <h3>Customer Experience Analytics Platform</h3>
                     <p><strong><em>Domain: Travel & Hospitality</em></strong></p>
+                    <div class="project-links">
+                        <a href="https://www.kaggle.com/datasets/arushchillar/disneyland-reviews" target="_blank" class="link">Dataset→</a>
+                        <a href="https://github.com/varunvaddi/Customer-Review-Analytics" target="_blank" class="link">GitHub→</a>
+                        <a href="https://public.tableau.com/app/profile/varun.vaddi/viz/DisneyLandCustomerReviewAnalytics/S1#1" target="_blank" class="link">Dashboard→</a>
+                    </div>
                     <p>Analyzed 41K+ TripAdvisor reviews across Disneyland parks (California, Paris, Hong Kong) using NLP to extract sentiment patterns and operational insights driving guest experience improvements.</p>
                     <p><b>Feature Engineering:</b> Built 45+ features from unstructured text including sentiment polarity, review length, and keyword indicators (wait times, cleanliness, staff behavior) to quantify experience drivers.</p>
                     <p><b>Analytics Infrastructure:</b> Designed interactive Tableau dashboards with multi-dimensional filtering (park location, reviewer origin, visit timeframe, sentiment) using maps, heatmaps, and trend visualizations.</p>
@@ -297,11 +305,7 @@
                         <span class="tech-tag">Tableau</span>
                         <span class="tech-tag">Pandas</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://www.kaggle.com/datasets/arushchillar/disneyland-reviews" target="_blank" class="link">Dataset→</a>
-                        <a href="https://github.com/varunvaddi/Customer-Review-Analytics" target="_blank" class="link">GitHub→</a>
-                        <a href="https://public.tableau.com/app/profile/varun.vaddi/viz/DisneyLandCustomerReviewAnalytics/S1#1" target="_blank" class="link">Dashboard→</a>
-                    </div>
+                    
                 </div>
 
             </div>
