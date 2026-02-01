@@ -558,22 +558,66 @@ html[data-theme="dark"] .experience-highlights {
     transform: translateY(-2px);
 }
 
-/*.project-links {
+.certifications-section {
+    padding: 4rem 2rem;
+    background: var(--bg-primary);
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.certification-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.certification-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cert-header h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+}
+
+.cert-issuer {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.cert-details {
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
 }
 
-.link {
-    color: var(--primary);
+.cert-date {
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+.cert-link {
+    color: var(--accent-color);
     text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s;
+    font-size: 0.9rem;
+    transition: color 0.2s;
 }
 
-.link:hover {
-    color: var(--primary-dark);
-    text-decoration: underline;
-}*/
+.cert-link:hover {
+    color: var(--accent-hover);
+}
 
 /* Skills Section */
 .skills-grid {
