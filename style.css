@@ -28,8 +28,8 @@ html[data-theme="dark"] {
     --resume: #ffffff;
     --resume-text: #000000;
     --primary-light: #a0622b;     /* Darker Copper */
-    --text: #FFFFFF; /*#E5E5E5;*/              /* Light Gray Text */
-    --text-light: #A3A3A3;        /* Muted Gray Text */
+    --text: #FFFFFF;             /* white Text */
+    --text-light: #F5F5F5;        /* light Gray Text */
     --bg: #0a2e2f;                /* Deep Teal Background */
     --bg-alt: #0f3d3e;            /* Slightly Lighter Teal */
     --border: #14494a;            /* Teal Border */
