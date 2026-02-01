@@ -560,7 +560,7 @@ html[data-theme="dark"] .experience-highlights {
 
 .certifications-section {
     padding: 4rem 2rem;
-    background: var(--bg-primary);
+    background: var(--bg);
 }
 
 .certifications-grid {
@@ -571,8 +571,8 @@ html[data-theme="dark"] .experience-highlights {
 }
 
 .certification-card {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border-color);
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 1.5rem;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -600,7 +600,7 @@ html[data-theme="dark"] .experience-highlights {
     align-items: center;
     margin-top: 1rem;
     padding-top: 1rem;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--border);
 }
 
 .cert-date {
