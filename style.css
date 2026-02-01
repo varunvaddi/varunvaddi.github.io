@@ -389,7 +389,7 @@ html[data-theme="dark"] .experience-highlights {
     line-height: 1.6;
     border-left: 2px solid var(--bg-alt);
     margin-left: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     text-align: left;
 }
 
@@ -440,7 +440,7 @@ html[data-theme="dark"] .experience-highlights {
 
 .recommendation-text {
     color: var(--text-light);
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 1.8;
     margin-bottom: 2rem;
     font-style: italic;
@@ -508,8 +508,8 @@ html[data-theme="dark"] .experience-highlights {
 
 .project-card p {
     color: var(--text-light);
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
     text-align: left;
 }
 
