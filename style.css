@@ -389,7 +389,8 @@ html[data-theme="dark"] .experience-highlights {
     line-height: 1.6;
     border-left: 2px solid var(--bg-alt);
     margin-left: 0.5rem;
-    text-align: justify;
+    font-size: 1.2rem;
+    text-align: left;
 }
 
 .experience-details li:before {
@@ -507,6 +508,7 @@ html[data-theme="dark"] .experience-highlights {
 
 .project-card p {
     color: var(--text-light);
+    font-size: 1rem;
     margin-bottom: 1.5rem;
     text-align: left;
 }
