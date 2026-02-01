@@ -508,7 +508,7 @@ html[data-theme="dark"] .experience-highlights {
 .project-card p {
     color: var(--text-light);
     margin-bottom: 1.5rem;
-    text-align: justify;
+    text-align: left;
 }
 
 .tech-stack {
