@@ -440,7 +440,7 @@ html[data-theme="dark"] .experience-highlights {
 
 .recommendation-text {
     color: var(--text-light);
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.8;
     margin-bottom: 2rem;
     font-style: italic;
