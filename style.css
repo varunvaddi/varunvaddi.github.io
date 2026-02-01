@@ -560,7 +560,7 @@ html[data-theme="dark"] .experience-highlights {
 
 .certifications-section {
     padding: 4rem 2rem;
-    background: var(--bg);
+    background: var(--bg-alt);
 }
 
 .certifications-grid {
@@ -578,7 +578,7 @@ html[data-theme="dark"] .experience-highlights {
 }
 
 .certification-card {
-    background: var(--bg-alt);
+    background: var(--bg);
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: 1.5rem;
