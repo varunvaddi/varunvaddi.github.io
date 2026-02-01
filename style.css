@@ -434,7 +434,7 @@ html[data-theme="dark"] .experience-highlights {
     color: var(--primary);
     opacity: 0.2;
     line-height: 1;
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
     font-family: Georgia, serif;
 }
 
@@ -662,6 +662,7 @@ html[data-theme="dark"] .experience-highlights {
 
 .edu-details {
     color: var(--text-light);
+    font-weight: bold;
 }
 
 /* Contact Section */
