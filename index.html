@@ -224,7 +224,11 @@
                 
                 <div class="project-card">
                     <h3>Urban Mobility Analytics Platform</h3>
-                    <p>Architected hybrid batch-streaming platform processing 8.6M+ NYC taxi records, achieving 95% runtime reduction (6 hours → 23 seconds) through Snowflake multi-layer architecture, dbt incremental models, and Dockerized Airflow with 37+ automated validation checks maintaining 99.88% data quality. Implemented 3-layer ETL pipeline (staging → intermediate → marts) with epoch conversion, business logic enrichment, and automated anomaly detection flagging 3,400+ edge cases including short-high-fare airport pickups and revenue outliers. Integrated Kafka streaming reducing latency from 24-hour batches to <5 minutes real-time ingestion via Python producer-consumer processing 10 msgs/sec with 100-record batching. Built 6 Tableau dashboards revealing: 30% demand concentration at 5-6 PM peak, 18% credit card revenue premium ($27.85 vs $23.52), Upper East Side-Midtown corridor dominance across 8.45M yellow and 128K green trips totaling $180M+ quarterly revenue.</p>
+                    <p>Domain: Travel</p>
+                    <p>Built an end-to-end analytics pipeline for NYC taxi operations (8.6M+ trips, $180M+ quarterly revenue), combining batch and streaming architectures to enable real-time demand forecasting and dynamic pricing optimization.</p>
+                    <p>Performance: Reduced feature prep time by 95% (6 hours → 23 seconds) using Snowflake, dbt, and Dockerized Airflow with 37 automated validations maintaining 99.88% data quality</p>
+                    <p>Real-time Integration: Kafka streaming cut ingestion latency from 24-hour batches to <5 minutes, processing 10 msgs/sec for live demand signals.</p>
+                    <p>Business Impact: Tableau dashboards uncovered 30% demand spike at peak hours, 18% credit card revenue premium, and high-value corridor patterns — insights driving driver allocation and pricing strategies.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Snowflake</span>
                         <span class="tech-tag">dbt</span>
