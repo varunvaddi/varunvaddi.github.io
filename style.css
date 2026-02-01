@@ -560,11 +560,25 @@ html[data-theme="dark"] .experience-highlights {
 
 .certifications-section {
     padding: 4rem 2rem;
-    background: var(--bg);  /* Use main background */
+    background: var(--bg);
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Force 2 columns */
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 768px) {
+    .certifications-grid {
+        grid-template-columns: 1fr;  /* Single column on mobile */
+    }
 }
 
 .certification-card {
-    background: var(--bg-alt);  /* Use alternate background for contrast */
+    background: var(--bg-alt);
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: 1.5rem;
@@ -574,7 +588,7 @@ html[data-theme="dark"] .experience-highlights {
 .certification-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-color: var(--primary);  /* Optional: accent border on hover */
+    border-color: var(--primary);
 }
 
 .cert-header h3 {
