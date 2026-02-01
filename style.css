@@ -560,18 +560,11 @@ html[data-theme="dark"] .experience-highlights {
 
 .certifications-section {
     padding: 4rem 2rem;
-    background: var(--bg);
-}
-
-.certifications-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+    background: var(--bg);  /* Use main background */
 }
 
 .certification-card {
-    background: var(--bg-alt);
+    background: var(--bg-alt);  /* Use alternate background for contrast */
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: 1.5rem;
@@ -581,16 +574,17 @@ html[data-theme="dark"] .experience-highlights {
 .certification-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary);  /* Optional: accent border on hover */
 }
 
 .cert-header h3 {
     margin: 0 0 0.5rem 0;
-    color: var(--text-primary);
+    color: var(--text);
     font-size: 1.25rem;
 }
 
 .cert-issuer {
-    color: var(--text-secondary);
+    color: var(--text-light);
     font-size: 0.9rem;
 }
 
@@ -609,14 +603,14 @@ html[data-theme="dark"] .experience-highlights {
 }
 
 .cert-link {
-    color: var(--accent-color);
+    color: var(--primary);
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.2s;
 }
 
 .cert-link:hover {
-    color: var(--accent-hover);
+    color: var(--primary-dark);
 }
 
 /* Skills Section */
