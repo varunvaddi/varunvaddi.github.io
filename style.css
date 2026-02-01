@@ -82,8 +82,9 @@ nav .container {
 
 .nav-links {
     display: flex;
+    justify-content: space-evenly; /* Equally justified */
     list-style: none;
-    gap: 2rem;
+    gap: 0rem;
     flex: 1;
 }
 
@@ -92,6 +93,10 @@ nav .container {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
+    font-size: 1rem; /* Bigger text */
+    transition: color 0.3s;
+    display: block;
+    padding: 0.5rem;
 }
 
 .nav-links a:hover {
