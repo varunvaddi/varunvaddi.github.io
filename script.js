@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const phrases = [
         "Hi, I'm <span class='highlight'>Varun Vaddi</span>",
         "I'm a <span class='highlight'>Data Scientist</span>",
-        "I build <span class='highlight'>ML/AI Models</span>",
-        "I also build <span class='highlight'>Data Pipelines</span>"
+        "I build <span class='highlight'>AI/ML Models</span>",
+        "I also build <span class='highlight'>Data Pipelines</span>",
+        "I'm looking for <span class='highlight'>Full-Time Opportunities</span>"
     ];
 
     let currentPhraseIndex = 0;
