@@ -26,19 +26,6 @@ html[data-theme="light"] {
     --border: #D4C4B0;            /* Tan Border */
 }
 
-/*html[data-theme="dark"] {
-    --primary: #b87333;           /* Mahindra Copper Accent */
-    /*--primary-dark: #d4924a;      /* Lighter Copper for hover */
-   /* --resume: #ffffff;
-   /* --resume-text: #000000;
-    /*--primary-light: #a0622b;     /* Darker Copper */
-    /*--text: #FFFFFF;             /* white Text */
-    /*--text-light: #F5F5F5;        /* light Gray Text */
-    /*--bg: #0a2e2f;                /* Deep Teal Background */
-    /*--bg-alt: #0f3d3e;            /* Slightly Lighter Teal */
-    /*--border: #14494a;            /* Teal Border */
-/*} */
-
 html[data-theme="dark"] {
     --primary: #b87333;           /* Mahindra Copper Accent */
     --primary-dark: #d4924a;      /* Lighter Copper for hover */
