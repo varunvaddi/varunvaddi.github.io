@@ -27,16 +27,16 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-    --primary: #b87333;           /* Mahindra Copper Accent */
-    --primary-dark: #d4924a;      /* Lighter Copper for hover */
-    --resume: #ffffff;
+    --primary: #B87333;           /* Mahindra Copper Accent */
+    --primary-dark: #D4924A;      /* Lighter Copper for hover */
+    --resume: #FFFFFF;
     --resume-text: #000000;
-    --primary-light: #a0622b;     /* Darker Copper */
+    --primary-light: #A0622B;     /* Darker Copper */
     --text: #FFFFFF;              /* White Text */
     --text-light: #F5F5F5;        /* Light Gray Text */
-    --bg: #0a0a0a;                /* Near Black (like bg-neutral-950) */
-    --bg-alt: #1a1a1a;            /* Slightly Lighter Black */
-    --border: #2a2a2a;            /* Dark Gray Border */
+    --bg: #0A0A0A;                /* Near Black (like bg-neutral-950) */
+    --bg-alt: #1A1A1A;            /* Slightly Lighter Black */
+    --border: #2A2A2A;            /* Dark Gray Border */
 }
 
 
