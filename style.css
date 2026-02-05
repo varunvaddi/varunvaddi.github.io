@@ -26,18 +26,20 @@ html[data-theme="light"] {
     --border: #D4C4B0;            /* Tan Border */
 }
 
-html[data-theme="dark"] { 
-    --primary: #b87333;           /* Mahindra Copper Accent */
-    --primary-dark: #d4924a;      /* Lighter Copper for hover */
-    --resume: #ffffff;
+
+html[data-theme="dark"] {
+    --primary: #B87333;           /* Mahindra Copper Accent */
+    --primary-dark: #D4924A;      /* Lighter Copper for hover */
+    --resume: #FFFFFF;
     --resume-text: #000000;
-    --primary-light: #a0622b;     /* Darker Copper */
-    --text: #FFFFFF;             /* white Text */
-    --text-light: #F5F5F5;        /* light Gray Text */
-    --bg: #0a2e2f;               /* Deep Teal Background */
-    --bg-alt: #0f3d3e;           /* Slightly Lighter Teal */
-    --border: #14494a;            /* Teal Border */
-} 
+    --primary-light: #A0622B;     /* Darker Copper */
+    --text: #FFFFFF;              /* White Text */
+    --text-light: #F5F5F5;        /* Light Gray Text */
+    --bg: #0A0A0A;                /* Near Black (like bg-neutral-950) */
+    --bg-alt: #1A1A1A;            /* Slightly Lighter Black */
+    --border: #2A2A2A;            /* Dark Gray Border */
+}
+ 
  
 
 
