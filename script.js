@@ -195,11 +195,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const currentScroll = window.pageYOffset;
             
             // Add shadow on scroll
-            if (currentScroll > 50) {
-                capsuleNav.style.boxShadow = '0 10px 40px rgba(0, 0, 0, 0.15)';
-            } else {
-                capsuleNav.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.1)';
-            }
+            //if (currentScroll > 50) {
+             //   capsuleNav.style.boxShadow = '0 10px 40px rgba(0, 0, 0, 0.15)';
+            //} else {
+              //  capsuleNav.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.1)';
+           // }
             
             lastScroll = currentScroll;
         });
