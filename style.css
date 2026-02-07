@@ -38,7 +38,7 @@ html[data-theme="dark"] {
     --bg: #0A0A0A;                /* Near Black (like bg-neutral-950) */
     --bg-alt: #1A1A1A;            /* Slightly Lighter Black */
     --border: #2A2A2A;            /* Dark Gray Border */
-    --capsule-bg: #1A1A1A;        /* Dark capsule background */
+    --capsule-bg: rgba(26, 26, 26, 0.7);  /* Semi-transparent dark */
     --capsule-text: #FFFFFF;      /* Light text for capsule */
 }
 
@@ -51,7 +51,7 @@ body {
     color: var(--text);
     background: var(--bg);
     transition: background-color 0.3s ease, color 0.3s ease;
-    padding-top: 120px; /* Add padding to account for fixed nav */
+    padding-top: 110px; /* Reduced padding for sleeker nav */
 }
 
 .container {
@@ -73,17 +73,18 @@ body {
 }
 
 .capsule-container {
-    background: var(--capsule-bg);
-    border: 1px solid var(--border);
+    background: rgba(45, 36, 22, 0.7);  /* Semi-transparent dark brown */
+    border: 1px solid rgba(212, 196, 176, 0.3);
     border-radius: 50px;
-    padding: 0.75rem 2rem;
-    backdrop-filter: blur(15px);
+    padding: 0.5rem 1.5rem;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    min-height: 70px;
+    min-height: 60px;
 }
 
 /* Navigation Groups */
@@ -106,11 +107,17 @@ body {
     color: var(--capsule-text);
     text-decoration: none;
     font-weight: 500;
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    padding: 0.6rem 1.3rem;
     border-radius: 60px;
     transition: all 0.3s ease;
     white-space: nowrap;
+}
+
+/* Dark mode capsule styling */
+html[data-theme="dark"] .capsule-container {
+    background: rgba(26, 26, 26, 0.7);
+    border: 1px solid rgba(42, 42, 42, 0.5);
 }
 
 .nav-item:hover {
@@ -131,9 +138,9 @@ body {
 /* Center Branding */
 .nav-brand {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 0.25rem;
+    gap: 0.75rem;
     cursor: pointer;
     flex-shrink: 0;
 }
@@ -162,8 +169,8 @@ body {
 .brand-name {
     color: var(--capsule-text);
     font-weight: 700;
-    font-size: 0.875rem;
-    letter-spacing: 0.05em;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
 }
 
 /* Theme Toggle in Capsule */
@@ -688,9 +695,21 @@ html[data-theme="dark"] .experience-highlights {
 /* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmin(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+}
+
+@media (min-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .project-card {
