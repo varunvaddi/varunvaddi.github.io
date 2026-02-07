@@ -400,6 +400,7 @@ html[data-theme="dark"] .capsule-container {
 .btn-primary:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
+    border: 1px solid rgba(255, 255, 255, 0.6);  /* Add this line */
 }
 
 .btn-secondary {
@@ -422,6 +423,7 @@ html[data-theme="dark"] .capsule-container {
 .btn-resume:hover { 
     background: var(--resume);
     transform: translateY(-2px);
+    border: 1px solid rgba(255, 255, 255, 0.6);  /* Add this line */
 }
 
 /* Sections */
@@ -1001,6 +1003,7 @@ html[data-theme="dark"] .experience-highlights {
 .contact-btn:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
+    border: 1px solid rgba(255, 255, 255, 0.6);  /* Add this line */
 }
 
 .location {
