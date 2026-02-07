@@ -74,7 +74,7 @@ body {
 
 .capsule-container {
     background: rgba(45, 36, 22, 0.7);  /* Semi-transparent dark brown */
-    border: 1px solid rgba(212, 196, 176, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.6);  /* Change this from rgba(212, 196, 176, 0.3) */
     border-radius: 50px;
     padding: 0.5rem 1.5rem;
     backdrop-filter: blur(20px) saturate(180%);
