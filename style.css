@@ -13,8 +13,8 @@ html {
 }
 
 html[data-theme="light"] {
-    --primary: #6B4423;           /* Rich Chocolate Brown */
-    --primary-dark: #4A2C1A;      /* Darker Chocolate */
+    --primary: #f37b15;           /* Rich Chocolate Brown */
+    --primary-dark: #f37b15;      /* Darker Chocolate */
     --resume: #000000;
     --resume-text: white;
     --primary-light: #8B5A3C;     /* Light Chocolate */
@@ -28,8 +28,8 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-    --primary: #B87333;           /* Mahindra Copper Accent */
-    --primary-dark: #D4924A;      /* Lighter Copper for hover */
+    --primary: ##f37b15;           /* Mahindra Copper Accent */
+    --primary-dark: #f37b15;      /* Lighter Copper for hover */
     --resume: #FFFFFF;
     --resume-text: #000000;
     --primary-light: #A0622B;     /* Darker Copper */
