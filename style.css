@@ -28,7 +28,7 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-    --primary: ##f37b15;           /* Mahindra Copper Accent */
+    --primary: #f37b15;           /* Mahindra Copper Accent */
     --primary-dark: #f37b15;      /* Lighter Copper for hover */
     --resume: #FFFFFF;
     --resume-text: #000000;
