@@ -18,7 +18,7 @@ html[data-theme="light"] {
     --resume: #000000;
     --resume-text: white;
     --primary-light: #8B5A3C;     /* Light Chocolate */
-    --text: #2D2416;              /* Dark Brown Text */
+    --text: #000000;              /* Dark Brown Text */
     --text-light: #5C4A3A;        /* Medium Brown Text */
     --bg: #FFFFFF;                /* Warm Beige Background */
     --bg-alt: #EAE3D5;            /* Slightly Darker Beige */
