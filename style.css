@@ -70,6 +70,7 @@ body {
     width: 95%;
     max-width: 1298px;
     transition: all 0.3s ease;
+    background: transparent;  /* Add this line or make sure it's transparent */
 }
 
 .capsule-container {
