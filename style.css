@@ -125,7 +125,7 @@ html[data-theme="dark"] .capsule-container {
 }
 
 .nav-item-highlight {
-    background: var(--primary);
+    background: #E97C17;
     color: white;
     font-weight: 600;
 }
