@@ -20,7 +20,7 @@ html[data-theme="light"] {
     --primary-light: #8B5A3C;     /* Light Chocolate */
     --text: #2D2416;              /* Dark Brown Text */
     --text-light: #5C4A3A;        /* Medium Brown Text */
-    --bg: #F5F1E8;                /* Warm Beige Background */
+    --bg: #FFFFFF;                /* Warm Beige Background */
     --bg-alt: #EAE3D5;            /* Slightly Darker Beige */
     --border: #D4C4B0;            /* Tan Border */
     --capsule-bg: #2D2416;        /* Dark capsule background */
