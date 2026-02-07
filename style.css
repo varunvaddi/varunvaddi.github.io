@@ -827,7 +827,7 @@ html[data-theme="dark"] .experience-highlights {
 }
 
 .certification-card {
-    background: var(--bg);
+    background: var(--bg-alt);
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: 1.5rem;
