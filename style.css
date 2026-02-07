@@ -548,8 +548,8 @@ h2 {
 
 .timeline-content:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 24px rgba(59, 130, 246, 0.15);
-    border-color: var(--primary);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 255, 255, 0.6);  /* Change this */
 }
 
 .experience-header {
@@ -672,7 +672,7 @@ html[data-theme="dark"] .experience-highlights {
 .recommendation-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(59, 130, 246, 0.15);
-    border-color: var(--primary);
+    border-color: rgba(255, 255, 255, 0.6);  /* Change this */
 }
 
 .quote-icon {
@@ -755,6 +755,7 @@ html[data-theme="dark"] .experience-highlights {
 .project-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);  /* Change this */
 }
 
 .project-card h3 {
@@ -837,7 +838,7 @@ html[data-theme="dark"] .experience-highlights {
 .certification-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-color: var(--primary);
+    border-color: rgba(255, 255, 255, 0.6);  /* Change this */
 }
 
 .cert-header h3 {
@@ -945,7 +946,7 @@ html[data-theme="dark"] .experience-highlights {
 .education-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(59, 130, 246, 0.15);
-    border-color: var(--primary);
+    border-color: rgba(255, 255, 255, 0.6);  /* Change this */
 }
 
 .education-card h3 {
