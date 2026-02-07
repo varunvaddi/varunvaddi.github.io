@@ -74,7 +74,7 @@ body {
 
 .capsule-container {
     background: rgba(45, 36, 22, 0.7);  /* Semi-transparent dark brown */
-    border: 2px solid rgba(255, 255, 255, 0.6);  /* Change this from rgba(212, 196, 176, 0.3) */
+    border: 1px solid rgba(255, 255, 255, 0.6);  /* Change this from rgba(212, 196, 176, 0.3) */
     border-radius: 50px;
     padding: 0.5rem 1.5rem;
     backdrop-filter: blur(20px) saturate(180%);
@@ -117,7 +117,7 @@ body {
 /* Dark mode capsule styling */
 html[data-theme="dark"] .capsule-container {
     background: rgba(26, 26, 26, 0.7);
-    border: 2px solid rgba(255, 255, 255, 0.6);  /* Change this from rgba(42, 42, 42, 0.5) */
+    border: 1px solid rgba(255, 255, 255, 0.6);  /* Change this from rgba(42, 42, 42, 0.5) */
 }
 
 .nav-item:hover {
@@ -400,7 +400,7 @@ html[data-theme="dark"] .capsule-container {
 .btn-primary:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
-    border: 2px solid rgba(255, 255, 255, 0.6);  /* Add this line */
+    border: 1px solid rgba(255, 255, 255, 0.6);  /* Add this line */
 }
 
 .btn-secondary {
@@ -423,7 +423,7 @@ html[data-theme="dark"] .capsule-container {
 .btn-resume:hover { 
     background: var(--resume);
     transform: translateY(-2px);
-    border: 2px solid rgba(255, 255, 255, 0.6);  /* Add this line */
+    border: 1px solid rgba(255, 255, 255, 0.6);  /* Add this line */
 }
 
 /* Sections */
@@ -1003,7 +1003,7 @@ html[data-theme="dark"] .experience-highlights {
 .contact-btn:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
-    border: 2px solid rgba(255, 255, 255, 0.6);  /* Add this line */
+    border: 1px solid rgba(255, 255, 255, 0.6);  /* Add this line */
 }
 
 .location {
