@@ -7,24 +7,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <a href="#" class="logo">Varun Vaddi</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#recommendations">Recommendations</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+    <!-- Floating Capsule Navigation -->
+    <nav class="capsule-nav">
+        <div class="capsule-container">
+            <!-- Left Navigation -->
+            <div class="nav-group nav-left">
+                <a href="#about" class="nav-item">About</a>
+                <a href="#experience" class="nav-item">Experience</a>
+                <a href="#projects" class="nav-item">Projects</a>
+            </div>
+            
+            <!-- Center Branding -->
+            <div class="nav-brand">
+                <div class="brand-circle">
+                    <span class="brand-initials">VV</span>
+                </div>
+                <span class="brand-name">Varun Vaddi</span>
+            </div>
+            
+            <!-- Right Navigation -->
+            <div class="nav-group nav-right">
+                <a href="#certifications" class="nav-item">Certifications</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#contact" class="nav-item nav-item-highlight">Contact</a>
+            </div>
+
+            <!-- Theme Toggle -->
+            <button id="theme-toggle" class="theme-toggle-capsule" aria-label="Toggle dark mode">
                 <span class="theme-icon">🌙</span>
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 12h16"></path>
+                    <path d="M4 18h16"></path>
+                    <path d="M4 6h16"></path>
+                </svg>
             </button>
         </div>
     </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#about" class="mobile-menu-item">About</a>
+            <a href="#experience" class="mobile-menu-item">Experience</a>
+            <a href="#projects" class="mobile-menu-item">Projects</a>
+            <a href="#certifications" class="mobile-menu-item">Certifications</a>
+            <a href="#skills" class="mobile-menu-item">Skills</a>
+            <a href="#recommendations" class="mobile-menu-item">Recommendations</a>
+            <a href="#contact" class="mobile-menu-item">Contact</a>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section id="hero">
