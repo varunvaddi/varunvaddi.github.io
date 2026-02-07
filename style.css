@@ -123,6 +123,7 @@ html[data-theme="dark"] .capsule-container {
 
 .nav-item:hover {
     background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.6);  /* Add this line */
 }
 
 .nav-item-highlight {
@@ -193,6 +194,7 @@ html[data-theme="dark"] .capsule-container {
 .theme-toggle-capsule:hover {
     transform: scale(1.1) rotate(20deg);
     background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.6);  /* Add this line */
 }
 
 /* Mobile Menu Button */
@@ -213,6 +215,7 @@ html[data-theme="dark"] .capsule-container {
 .mobile-menu-btn:hover {
     background: var(--primary-dark);
     transform: scale(1.05);
+    border: 1px solid rgba(255, 255, 255, 0.6);  /* Add this line */
 }
 
 /* Mobile Menu Overlay */
