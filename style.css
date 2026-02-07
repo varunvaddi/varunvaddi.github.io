@@ -431,8 +431,40 @@ section {
     border-radius: 20px;
 }
 
-section:nth-child(even) {
+#hero {
+    background: var(--bg);
+}
+
+#about {
     background: var(--bg-alt);
+}
+
+#experience {
+    background: var(--bg);
+}
+
+#projects {
+    background: var(--bg-alt);
+}
+
+#certifications {
+    background: var(--bg);
+}
+
+#skills {
+    background: var(--bg-alt);
+}
+
+#education {
+    background: var(--bg);
+}
+
+#recommendations {
+    background: var(--bg-alt);
+}
+
+#contact {
+    background: var(--bg);
 }
 
 /* Make cards contrast with section backgrounds */
