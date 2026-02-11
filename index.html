@@ -303,22 +303,26 @@
                 </div>
 
                 <div class="project-card">
-                    <h3>Grocery ML Platform (In Progress)</h3>
+                    <h3>Grocery ML Platform</h3>
                     <p><strong><em>Domain: Retail</em></strong></p>
                     <div class="project-links">
                         <a href="https://varunvaddi.github.io/instacart-grocery/" target="_blank" class="link">Architecture→</a>
+                        <a href="https://instacart-grocery.streamlit.app/" target="_blank" class="link">Demo→</a>
                         <a href="https://www.kaggle.com/datasets/yasserh/instacart-online-grocery-basket-analysis-dataset" target="_blank" class="link">Dataset→</a>
                         <a href="https://github.com/varunvaddi/instacart-smart-cart" target="_blank" class="link">GitHub→</a>
                     </div>
-                    <p>Building an end-to-end ML platform for retail grocery analytics using the Instacart dataset on Azure, combining demand forecasting, product recommendations, and customer segmentation to optimize inventory and personalization.</p>
-                    <p><b>Tech Stack:</b> Azure Data Lake Gen2 + Databricks (PySpark 3.5, Delta Lake) for scalable data processing with ACID transactions and time travel. Great Expectations for data quality validation, MLflow for experiment tracking.</p>
-                    <p><b>ML Pipeline:</b> XGBoost for classification tasks, Spark ALS for collaborative filtering recommendations, and Databricks Feature Store for centralized feature management and reuse.</p>
-                    <p><b>Deployment:</b> Tableau dashboards connected to Azure SQL Database for business intelligence. Full stack running on Azure free tier with student credits</p>
+                    <p><strong>End-to-end ML platform</strong> processing <strong>10.6M orders</strong> to deliver personalized recommendations, churn prevention, and customer lifetime value prediction. Identified <strong>$4.65M annual business opportunity</strong> through advanced analytics and ML optimization.</p>
+                    <p><b>ML Models (5):</b> Reorder prediction (80% AUC), Customer LTV (90% R²), Churn detection (77% AUC optimized via Hyperopt), RFM segmentation (7 customer segments), Market basket analysis (149 association rules with 2-296x lift).</p>
+                    <p><b>Advanced Techniques:</b> Hyperparameter tuning with Hyperopt (+2% AUC improvement), SHAP explainability for model interpretability, feature engineering (45+ features), data leakage detection and resolution (fixed 100% → 77% AUC).</p>
+                    <p><b>Tech Stack:</b> Azure Data Lake Gen2 + Databricks (PySpark 3.5, Delta Lake) with medallion architecture (Bronze/Silver/Gold layers). MLflow for experiment tracking (20+ experiments), Great Expectations for data quality, Z-ordering for query optimization.</p>
+                    <p><b>Business Impact:</b> RFM strategies ($3.45M), Market basket bundles ($1.15M), Churn prevention ($978K), LTV-based marketing ($234K). Interactive Streamlit dashboard with What-If simulator, ROI calculator, A/B test planner, and AI-generated email previews.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Databricks</span>
                         <span class="tech-tag">Microsoft Azure</span>
                         <span class="tech-tag">Apache Spark</span>
+                        <span class="tech-tag">XGBoost</span>
                         <span class="tech-tag">MLflow</span>
+                        <span class="tech-tag">Hyperopt</span>
                     </div>
                     
                 </div>
