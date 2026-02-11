@@ -262,49 +262,55 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     
+    // Buttons
     const deBtn = document.getElementById("de-btn");
     const dsBtn = document.getElementById("ds-btn");
-
-    const deProjects = document.querySelectorAll(".de-project");
-    const dsProjects = document.querySelectorAll(".ds-project");
-
-    function showProjects(projects) {
-        projects.forEach((el, i) => {
-            el.style.display = "block";
-            el.style.opacity = 0;
-            el.style.transform = "translateY(20px)";
-            setTimeout(() => {
-                el.classList.add("show");
-            }, i * 100);
-        });
+    
+    // All projects
+    const projects = document.querySelectorAll(".project");
+    
+    // Helper functions
+    function showProject(el, index) {
+        el.style.display = "block";
+        el.style.opacity = 0;
+        el.style.transform = "translateY(20px)";
+        setTimeout(() => el.classList.add("show"), index * 100);
     }
-
-    function hideProjects(projects) {
-        projects.forEach(el => {
-            el.classList.remove("show");
-            setTimeout(() => {
-                el.style.display = "none";
-            }, 300);
-        });
+    
+    function hideProject(el) {
+        el.classList.remove("show");
+        setTimeout(() => el.style.display = "none", 300);
     }
-
+    
+    // Activate button styling
     function activateButton(activeBtn, inactiveBtn) {
         activeBtn.classList.add("active");
         inactiveBtn.classList.remove("active");
     }
-
-    // Show DE projects on load
-    showProjects(deProjects);
-
+    
+    // Show projects based on category
+    function filterProjects(category) {
+        projects.forEach((el, i) => {
+            if (el.classList.contains(category)) {
+                showProject(el, i);
+            } else {
+                hideProject(el);
+            }
+        });
+    }
+    
+    // Initial load: show DE projects
+    filterProjects("de-project");
+    
+    // Button click events
     deBtn.addEventListener("click", () => {
-        hideProjects(dsProjects);
-        showProjects(deProjects);
+        filterProjects("de-project");
         activateButton(deBtn, dsBtn);
     });
-
+    
     dsBtn.addEventListener("click", () => {
-        hideProjects(deProjects);
-        showProjects(dsProjects);
+        filterProjects("ds-project");
         activateButton(dsBtn, deBtn);
     });
+
 });
