@@ -252,10 +252,17 @@
         <div class="container">
             <h2>Featured Projects</h2>
             <!-- Toggle Buttons -->
-            <div class="projects-toggle">
-                <button id="de-btn" class="toggle-btn active">Data Engineering</button>
-                <button id="ds-btn" class="toggle-btn">Data Science</button>
+            <div class="flex border-b-2 border-white bg-white/10 backdrop-blur-[5px] rounded-full gap-[10px] p-[10px] w-[367px] h-[82px] items-center justify-center">
+                <button id="de-btn" class="group flex items-center justify-center gap-2.5 px-5 py-2.5 rounded-[60px] transition-all duration-300 ease-in-out cursor-pointer
+                      bg-transparent text-white font-light text-[18px] w-[129px] h-[54px]">Data Engineering
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right transition-all duration-300 opacity-0 -translate-x-1 group-hover:opacity-100" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </button>
+                <button id="ds-btn" class="group flex items-center justify-center gap-2.5 px-5 py-2.5 rounded-[60px] transition-all duration-300 ease-in-out cursor-pointer
+                      bg-[#FD853A] text-white font-medium text-[25px] w-[208px] h-[62px] border border-[#D0D5DD] shadow-md">Data Science
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right transition-all duration-300 opacity-100 translate-x-0" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </button>
             </div>
+
             
             <div class="projects-grid">
                 <div class="project-card de-project">
