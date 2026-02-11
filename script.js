@@ -260,4 +260,51 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    
+    const deBtn = document.getElementById("de-btn");
+    const dsBtn = document.getElementById("ds-btn");
+
+    const deProjects = document.querySelectorAll(".de-project");
+    const dsProjects = document.querySelectorAll(".ds-project");
+
+    function showProjects(projects) {
+        projects.forEach((el, i) => {
+            el.style.display = "block";
+            el.style.opacity = 0;
+            el.style.transform = "translateY(20px)";
+            setTimeout(() => {
+                el.classList.add("show");
+            }, i * 100);
+        });
+    }
+
+    function hideProjects(projects) {
+        projects.forEach(el => {
+            el.classList.remove("show");
+            setTimeout(() => {
+                el.style.display = "none";
+            }, 300);
+        });
+    }
+
+    function activateButton(activeBtn, inactiveBtn) {
+        activeBtn.classList.add("active");
+        inactiveBtn.classList.remove("active");
+    }
+
+    // Show DE projects on load
+    showProjects(deProjects);
+
+    deBtn.addEventListener("click", () => {
+        hideProjects(dsProjects);
+        showProjects(deProjects);
+        activateButton(deBtn, dsBtn);
+    });
+
+    dsBtn.addEventListener("click", () => {
+        hideProjects(deProjects);
+        showProjects(dsProjects);
+        activateButton(dsBtn, deBtn);
+    });
 });
