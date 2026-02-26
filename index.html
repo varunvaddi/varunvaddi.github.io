@@ -251,9 +251,18 @@
     <section id="projects">
         <div class="container">
             <h2>Featured Projects</h2>
-            <div class="projects-grid">
+            <!-- Role Toggle -->
+            <div class="role-toggle-wrapper">
+                <div class="role-toggle">
+                    <div class="toggle-slider" id="toggleSlider"></div>
+                    <button class="toggle-btn active" id="btn-de" onclick="switchRole('de')">Data Engineer</button>
+                    <button class="toggle-btn" id="btn-ds" onclick="switchRole('ds')">Data Scientist</button>
+                </div>
+            </div>
+            
+            <div class="projects-grid" id="projectsGrid">
                 
-                <div class="project-card">
+                <div class="project-card" data-roles="de">
                     <h3>Urban Mobility Analytics Platform</h3>
                     <p><strong><em>Domain: Travel & Hospitality</em></strong></p>
                     <div class="project-links">
@@ -278,7 +287,7 @@
                     
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-roles="ds">
                     <h3>Ads Policy Compliance Assistant</h3>
                     <p><strong><em>Domain: Media & Tech</em></strong></p>
                     <div class="project-links">
@@ -302,7 +311,7 @@
                     
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-roles="de ds">
                     <h3>Grocery ML Platform</h3>
                     <p><strong><em>Domain: Retail</em></strong></p>
                     <div class="project-links">
