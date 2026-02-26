@@ -740,11 +740,18 @@ html[data-theme="dark"] .experience-highlights {
 .role-toggle {
     position: relative;
     display: inline-flex;
-    background: var(--bg);
-    border: 1px solid var(--border);
+    background: rgba(45, 36, 22, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 50px;
     padding: 4px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme="dark"] .role-toggle {
+    background: rgba(26, 26, 26, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 .toggle-slider {
@@ -774,7 +781,7 @@ html[data-theme="dark"] .experience-highlights {
     font-size: 0.95rem;
     font-weight: 600;
     cursor: pointer;
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.7);
     transition: color 0.25s ease;
     white-space: nowrap;
 }
