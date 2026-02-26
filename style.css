@@ -730,7 +730,7 @@ html[data-theme="dark"] .experience-highlights {
     color: var(--primary-dark);
 }
 
-/* ── Role Toggle ── */
+/* Role Toggle Widget */
 .role-toggle-wrapper {
     display: flex;
     justify-content: center;
@@ -744,7 +744,6 @@ html[data-theme="dark"] .experience-highlights {
     border: 1px solid var(--border);
     border-radius: 50px;
     padding: 4px;
-    gap: 0;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
@@ -784,24 +783,25 @@ html[data-theme="dark"] .experience-highlights {
     color: #ffffff;
 }
 
-/* ── Project card enter animation ── */
+/* Role visibility */
+.role-hidden {
+    display: none !important;
+}
+
+/* Card enter animation on toggle switch */
 @keyframes cardFadeIn {
     from { opacity: 0; transform: translateY(18px); }
     to   { opacity: 1; transform: translateY(0); }
 }
 
-.project-card.visible {
+.role-visible {
     animation: cardFadeIn 0.4s ease forwards;
 }
 
-.project-card.hidden {
-    display: none;
-}
+.role-visible:nth-child(1) { animation-delay: 0s; }
+.role-visible:nth-child(2) { animation-delay: 0.08s; }
+.role-visible:nth-child(3) { animation-delay: 0.16s; }
 
-/* stagger children */
-.project-card.visible:nth-child(1) { animation-delay: 0s; }
-.project-card.visible:nth-child(2) { animation-delay: 0.08s; }
-.project-card.visible:nth-child(3) { animation-delay: 0.16s; }
 
 /* Projects Grid */
 .projects-grid {
