@@ -323,7 +323,6 @@
                     <p><strong>End-to-end ML platform</strong> processing <strong>10.6M orders</strong> to deliver personalized recommendations, churn prevention, and customer lifetime value prediction. Identified <strong>$4.65M annual business opportunity</strong> through advanced analytics and ML optimization.</p>
                     <p><b>ML Models (5):</b> Reorder prediction (80% AUC), Customer LTV (90% R²), Churn detection (77% AUC optimized via Hyperopt), RFM segmentation (7 customer segments), Market basket analysis (149 association rules with 2-296x lift).</p>
                     <p><b>Advanced Techniques:</b> Hyperparameter tuning with Hyperopt (+2% AUC improvement), SHAP explainability for model interpretability, feature engineering (45+ features), data leakage detection and resolution (fixed 100% → 77% AUC).</p>
-                    <p><b>Tech Stack:</b> Azure Data Lake Gen2 + Databricks (PySpark 3.5, Delta Lake) with medallion architecture (Bronze/Silver/Gold layers). MLflow for experiment tracking (20+ experiments), Great Expectations for data quality, Z-ordering for query optimization.</p>
                     <p><b>Business Impact:</b> RFM strategies ($3.45M), Market basket bundles ($1.15M), Churn prevention ($978K), LTV-based marketing ($234K). Interactive Streamlit dashboard with What-If simulator, ROI calculator, A/B test planner, and AI-generated email previews.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">Databricks</span>
@@ -332,6 +331,31 @@
                         <span class="tech-tag">XGBoost</span>
                         <span class="tech-tag">MLflow</span>
                         <span class="tech-tag">Hyperopt</span>
+                    </div>
+                    
+                </div>
+
+                <div class="project-card" data-roles="de ds">
+                    <h3>Media ETL Analytics Platform</h3>
+                    <p><strong><em>Domain: Media & Tech</em></strong></p>
+                    <div class="project-links">
+                        <a href="https://varunvaddi.github.io/imdb-media/" target="_blank" class="link">Architecture→</a>
+                        <a href="https://instacart-grocery.streamlit.app/" target="_blank" class="link">Demo→</a>
+                        <a href="https://datasets.imdbws.com/" target="_blank" class="link">Dataset→</a>
+                        <a href="https://github.com/varunvaddi/IMDb-Movie-Analytics" target="_blank" class="link">GitHub→</a>
+                    </div>
+                    <p>End-to-end AWS data pipeline processing 12.3M IMDb records with XGBoost movie rating prediction (R²=0.664) — S3, Glue, Athena, SageMaker, EventBridge, Grafana.</p>
+                    <p><b>Data Engineering:</b> Batch ETL pipeline (AWS Glue PySpark) reduced 12.3M raw records → 309K clean movies with 99%+ data quality via Bronze-Silver-Gold architecture. Decade-partitioned Parquet achieved 10x compression over CSV; Athena serverless warehouse enables ad-hoc SQL with zero infrastructure cost.</p>
+                    <p><b>Machine Learning:</b> Engineered 43 ML features including director reputation metrics from 500MB dataset processed in cloud. Iterated 4 XGBoost versions — identified director historical ratings as key missing signal, improving R² from 0.306 → 0.664. SageMaker endpoint predicts Schindler's List at 9.11 vs 9.0 actual.</p>
+                    <p><b>Monitoring:</b> Automated full pipeline via EventBridge + Lambda on daily schedule — 3 Glue jobs run in sequence, ~16 min runtime, zero manual intervention. Pipeline health monitored via Grafana Cloud dashboards connected to Athena and SNS alerting on job failures.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">AWS S3</span>
+                        <span class="tech-tag">AWS Glue</span>
+                        <span class="tech-tag">AWS Athena</span>
+                        <span class="tech-tag">SageMaker</span>
+                        <span class="tech-tag">Grafana</span>
+                        <span class="tech-tag">EventBridge</span>
+                        <span class="tech-tag">SNS</span>
                     </div>
                     
                 </div>
@@ -411,7 +435,8 @@
                         <li>SQL</li>
                         <li>R</li>
                         <li>Java</li>
-                        <li>C</li>
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
                         
                     </ul>
                 </div>
@@ -439,13 +464,13 @@
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Viz & DB</h3>
+                    <h3>Tools</h3>
                     <ul>
+                        <li>AWS</li>
+                        <li>Azure</li>
                         <li>Tableau</li>
                         <li>Power BI</li>
                         <li>Advanced Excel</li>
-                        <li>MySQL</li>
-                        <li>Oracle</li>
                         <li>PostgreSQL</li>
                     </ul>
                 </div>
