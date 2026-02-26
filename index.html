@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
@@ -168,7 +170,7 @@
                     <div class="timeline-content">
                         <div class="experience-header">
                             <div>
-                                <h3>Application Development Analyst</h3>
+                                <h3>Data Analyst</h3>
                                 <p class="company">Accenture, India</p>
                             </div>
                             <span class="date-badge">Sep 2021 - Dec 2023</span>
@@ -260,107 +262,273 @@
                 </div>
             </div>
             
+            
             <div class="projects-grid" id="projectsGrid">
-                
+            
+                <!-- ── Urban Mobility (DE) ─────────────────────────────────── -->
                 <div class="project-card" data-roles="de">
-                    <h3>Urban Mobility Analytics Platform</h3>
-                    <p><strong><em>Domain: Travel & Hospitality</em></strong></p>
-                    <div class="project-links">
-                        <a href="https://varunvaddi.github.io/nyc-taxi/" target="_blank" rel="noopener noreferrer" class="link">Architecture→</a>
-                        <a href="https://public.tableau.com/app/profile/varun.vaddi/viz/NYCTaxiJan-Mar2025/Overview#1" target="_blank" rel="noopener noreferrer" class="link">Demo→</a>
-                        <a href="https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page" target="_blank" rel="noopener noreferrer" class="link">Dataset→</a>
-                        <a href="https://github.com/varunvaddi/nyc_taxi_etl" target="_blank" rel="noopener noreferrer" class="link">GitHub→</a>
-                        
+                    <div class="pc-accent-bar"></div>
+                    <div class="pc-header">
+                        <div class="pc-domain">
+                            <div class="pc-domain-dot"></div>
+                            Travel & Hospitality
+                        </div>
+                        <h3 class="pc-title">Urban Mobility<br><em>Analytics Platform</em></h3>
+                        <p class="pc-overview">
+                            End-to-end analytics pipeline for NYC taxi operations (8.6M+ trips, $180M+ quarterly revenue), combining batch and streaming architectures to enable real-time demand forecasting and dynamic pricing optimization.
+                        </p>
+                        <div class="pc-links">
+                            <a href="https://varunvaddi.github.io/nyc-taxi/" target="_blank" rel="noopener noreferrer" class="pc-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                Architecture
+                            </a>
+                            <a href="https://public.tableau.com/app/profile/varun.vaddi/viz/NYCTaxiJan-Mar2025/Overview#1" target="_blank" rel="noopener noreferrer" class="pc-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                                Demo
+                            </a>
+                            <a href="https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page" target="_blank" rel="noopener noreferrer" class="pc-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                                Dataset
+                            </a>
+                            <a href="https://github.com/varunvaddi/nyc_taxi_etl" target="_blank" rel="noopener noreferrer" class="pc-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                GitHub
+                            </a>
+                        </div>
                     </div>
-                    <p>Built an end-to-end analytics pipeline for NYC taxi operations (8.6M+ trips, $180M+ quarterly revenue), combining batch and streaming architectures to enable real-time demand forecasting and dynamic pricing optimization.</p>
-                    <p><b>Performance:</b> Reduced feature prep time by 95% (6 hours → 23 seconds) using Snowflake, dbt, and Dockerized Airflow with 37 automated validations maintaining 99.88% data quality</p>
-                    <p><b>Real-time Integration:</b> Kafka streaming cut ingestion latency from 24-hour batches to <5 minutes, processing 10 msgs/sec for live demand signals.</p>
-                    <p><b>Business Impact:</b> Tableau dashboards uncovered 30% demand spike at peak hours, 18% credit card revenue premium, and high-value corridor patterns — insights driving driver allocation and pricing strategies.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Snowflake</span>
-                        <span class="tech-tag">dbt</span>
-                        <span class="tech-tag">Airflow</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Kafka</span>
-                        <span class="tech-tag">Tableau</span>
+                    <div class="pc-body">
+                        <div class="pc-section">
+                            <div class="pc-section-icon pc-icon-orange">⚡</div>
+                            <div class="pc-section-content">
+                                <div class="pc-section-label pc-label-orange">Performance</div>
+                                <div class="pc-section-text">Reduced feature prep time by <span class="pc-hl pc-hl-orange">95% (6h → 23s)</span> using Snowflake, dbt, and Dockerized Airflow with 37 automated validations maintaining <span class="pc-hl pc-hl-orange">99.88% data quality</span>.</div>
+                            </div>
+                        </div>
+                        <div class="pc-section">
+                            <div class="pc-section-icon pc-icon-green">🔄</div>
+                            <div class="pc-section-content">
+                                <div class="pc-section-label pc-label-green">Real-time Integration</div>
+                                <div class="pc-section-text">Kafka streaming cut ingestion latency from <span class="pc-hl pc-hl-green">24h batches → &lt;5 min</span>, processing 10 msgs/sec for live demand signals.</div>
+                            </div>
+                        </div>
+                        <div class="pc-section">
+                            <div class="pc-section-icon pc-icon-blue">📊</div>
+                            <div class="pc-section-content">
+                                <div class="pc-section-label pc-label-blue">Business Impact</div>
+                                <div class="pc-section-text">Tableau dashboards uncovered <span class="pc-hl pc-hl-blue">30% demand spike</span> at peak hours, 18% credit card revenue premium, and high-value corridor patterns.</div>
+                            </div>
+                        </div>
+                        <div class="pc-stack">
+                            <div class="pc-stack-label">Tech Stack</div>
+                            <div class="pc-tags">
+                                <span class="pc-tag pc-tag-primary">Snowflake</span>
+                                <span class="pc-tag pc-tag-primary">dbt</span>
+                                <span class="pc-tag pc-tag-primary">Airflow</span>
+                                <span class="pc-tag pc-tag-primary">Kafka</span>
+                                <span class="pc-tag">Docker</span>
+                                <span class="pc-tag">Tableau</span>
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
-
+            
+                <!-- ── Ads Policy RAG (DS) ─────────────────────────────────── -->
                 <div class="project-card" data-roles="ds">
-                    <h3>Ads Policy Compliance Assistant</h3>
-                    <p><strong><em>Domain: Media & Tech</em></strong></p>
-                    <div class="project-links">
-                        <a href="https://varunvaddi.github.io/google-rag/" target="_blank" class="link">Architecture→</a>
-                        <a href="https://gooogle-rag.streamlit.app/" target="_blank" rel="noopener noreferrer" class="link">Demo→</a>
-                        <a href="https://support.google.com/adspolicy/topic/1626336" target="_blank" class="link">Dataset→</a>
-                        <a href="https://github.com/varunvaddi/Google-Ads-Policy-RAG" target="_blank" class="link">GitHub→</a>
+                    <div class="pc-accent-bar"></div>
+                    <div class="pc-header">
+                        <div class="pc-domain">
+                            <div class="pc-domain-dot"></div>
+                            Media & Tech
+                        </div>
+                        <h3 class="pc-title">Ads Policy<br><em>Compliance Assistant</em></h3>
+                        <p class="pc-overview">
+                            AI-powered RAG system for digital advertising compliance, automating Google Ads policy review across 341 regulatory chunks from 25 documents to enable scalable, real-time ad moderation.
+                        </p>
+                        <div class="pc-links">
+                            <a href="https://varunvaddi.github.io/google-rag/" target="_blank" class="pc-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                Architecture
+                            </a>
+                            <a href="https://gooogle-rag.streamlit.app/" target="_blank" rel="noopener noreferrer" class="pc-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                                Demo
+                            </a>
+                            <a href="https://support.google.com/adspolicy/topic/1626336" target="_blank" class="pc-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                                Dataset
+                            </a>
+                            <a href="https://github.com/varunvaddi/Google-Ads-Policy-RAG" target="_blank" class="pc-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                GitHub
+                            </a>
+                        </div>
                     </div>
-                    <p>Built an AI-powered RAG system for digital advertising compliance, automating Google Ads policy review across 341 regulatory chunks from 25 documents to enable scalable, real-time ad moderation</p>
-                    <p><b>Performance:</b> Hybrid retrieval (BM25 + BGE embeddings + cross-encoder reranking) achieved 80% accuracy and 78% Recall@5, reducing review time from 5-10 minutes to <1 second per ad with <350ms query latency.</p>
-                    <p><b>LLM Integration:</b> Gemini-powered structured outputs (Pydantic schemas) delivered zero hallucinations, 100% citation transparency, and automated risk scoring with confidence intervals.</p>
-                    <p><b>Business Impact:</b> Enabled compliance at scale (1,000+ ads/sec capacity), reduced manual review costs, and cut policy violations by 40% through real-time risk detection and consistent decision-making.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">RAG</span>
-                        <span class="tech-tag">LLM</span>
-                        <span class="tech-tag">FAISS</span>
-                        <span class="tech-tag">Embeddings</span>
-                        <span class="tech-tag">Web Scraping</span>
-                        <span class="tech-tag">Python</span>
+                    <div class="pc-body">
+                        <div class="pc-section">
+                            <div class="pc-section-icon pc-icon-orange">⚡</div>
+                            <div class="pc-section-content">
+                                <div class="pc-section-label pc-label-orange">Performance</div>
+                                <div class="pc-section-text">Hybrid retrieval (BM25 + BGE + reranking) achieved <span class="pc-hl pc-hl-orange">80% accuracy, 78% Recall@5</span>, reducing review time from 5–10 min to <span class="pc-hl pc-hl-orange">&lt;1 sec</span> with &lt;350ms query latency.</div>
+                            </div>
+                        </div>
+                        <div class="pc-section">
+                            <div class="pc-section-icon pc-icon-green">🤖</div>
+                            <div class="pc-section-content">
+                                <div class="pc-section-label pc-label-green">LLM Integration</div>
+                                <div class="pc-section-text">Gemini-powered structured outputs (Pydantic schemas) delivered <span class="pc-hl pc-hl-green">zero hallucinations</span>, 100% citation transparency, and automated risk scoring with confidence intervals.</div>
+                            </div>
+                        </div>
+                        <div class="pc-section">
+                            <div class="pc-section-icon pc-icon-blue">📈</div>
+                            <div class="pc-section-content">
+                                <div class="pc-section-label pc-label-blue">Business Impact</div>
+                                <div class="pc-section-text">Compliance at scale — <span class="pc-hl pc-hl-blue">1,000+ ads/sec capacity</span>, reduced manual review costs, and cut policy violations by <span class="pc-hl pc-hl-blue">40%</span> through real-time risk detection.</div>
+                            </div>
+                        </div>
+                        <div class="pc-stack">
+                            <div class="pc-stack-label">Tech Stack</div>
+                            <div class="pc-tags">
+                                <span class="pc-tag pc-tag-primary">RAG</span>
+                                <span class="pc-tag pc-tag-primary">LLM</span>
+                                <span class="pc-tag pc-tag-primary">FAISS</span>
+                                <span class="pc-tag pc-tag-primary">Embeddings</span>
+                                <span class="pc-tag">Web Scraping</span>
+                                <span class="pc-tag">Python</span>
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
-
+            
+                <!-- ── Grocery ML (DE + DS) ────────────────────────────────── -->
                 <div class="project-card" data-roles="de ds">
-                    <h3>Grocery ML Platform</h3>
-                    <p><strong><em>Domain: Retail</em></strong></p>
-                    <div class="project-links">
-                        <a href="https://varunvaddi.github.io/instacart-grocery/" target="_blank" class="link">Architecture→</a>
-                        <a href="https://instacart-grocery.streamlit.app/" target="_blank" class="link">Demo→</a>
-                        <a href="https://www.kaggle.com/datasets/yasserh/instacart-online-grocery-basket-analysis-dataset" target="_blank" class="link">Dataset→</a>
-                        <a href="https://github.com/varunvaddi/Instacart-Smart-Cart" target="_blank" class="link">GitHub→</a>
+                    <div class="pc-accent-bar"></div>
+                    <div class="pc-header">
+                        <div class="pc-domain">
+                            <div class="pc-domain-dot"></div>
+                            Retail & E-commerce
+                        </div>
+                        <h3 class="pc-title">Grocery<br><em>ML Pipeline</em></h3>
+                        <p class="pc-overview">
+                            <!-- Replace with your real Grocery ML description -->
+                            End-to-end machine learning pipeline for grocery demand forecasting and customer segmentation, combining feature engineering, model training, and automated retraining on production data.
+                        </p>
+                        <div class="pc-links">
+                            <a href="#" class="pc-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                Architecture
+                            </a>
+                            <a href="#" class="pc-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                                Dataset
+                            </a>
+                            <a href="#" class="pc-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                GitHub
+                            </a>
+                        </div>
                     </div>
-                    <p><strong>End-to-end ML platform</strong> processing <strong>10.6M orders</strong> to deliver personalized recommendations, churn prevention, and customer lifetime value prediction. Identified <strong>$4.65M annual business opportunity</strong> through advanced analytics and ML optimization.</p>
-                    <p><b>ML Models (5):</b> Reorder prediction (80% AUC), Customer LTV (90% R²), Churn detection (77% AUC optimized via Hyperopt), RFM segmentation (7 customer segments), Market basket analysis (149 association rules with 2-296x lift).</p>
-                    <p><b>Advanced Techniques:</b> Hyperparameter tuning with Hyperopt (+2% AUC improvement), SHAP explainability for model interpretability, feature engineering (45+ features), data leakage detection and resolution (fixed 100% → 77% AUC).</p>
-                    <p><b>Business Impact:</b> RFM strategies ($3.45M), Market basket bundles ($1.15M), Churn prevention ($978K), LTV-based marketing ($234K). Interactive Streamlit dashboard with What-If simulator, ROI calculator, A/B test planner, and AI-generated email previews.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Databricks</span>
-                        <span class="tech-tag">Microsoft Azure</span>
-                        <span class="tech-tag">Apache Spark</span>
-                        <span class="tech-tag">XGBoost</span>
-                        <span class="tech-tag">MLflow</span>
-                        <span class="tech-tag">Hyperopt</span>
+                    <div class="pc-body">
+                        <div class="pc-section">
+                            <div class="pc-section-icon pc-icon-orange">⚙️</div>
+                            <div class="pc-section-content">
+                                <div class="pc-section-label pc-label-orange">Data Engineering</div>
+                                <div class="pc-section-text"><!-- Replace with your real bullet --> Built scalable feature store and ETL pipeline processing <span class="pc-hl pc-hl-orange">X records daily</span> with automated data quality checks.</div>
+                            </div>
+                        </div>
+                        <div class="pc-section">
+                            <div class="pc-section-icon pc-icon-green">🤖</div>
+                            <div class="pc-section-content">
+                                <div class="pc-section-label pc-label-green">Machine Learning</div>
+                                <div class="pc-section-text"><!-- Replace with your real bullet --> Trained forecasting model achieving <span class="pc-hl pc-hl-green">X% MAPE</span> with automated retraining pipeline on new data.</div>
+                            </div>
+                        </div>
+                        <div class="pc-section">
+                            <div class="pc-section-icon pc-icon-blue">📊</div>
+                            <div class="pc-section-content">
+                                <div class="pc-section-label pc-label-blue">Business Impact</div>
+                                <div class="pc-section-text"><!-- Replace with your real bullet --> Reduced stockouts by <span class="pc-hl pc-hl-blue">X%</span> and improved inventory turnover through data-driven demand signals.</div>
+                            </div>
+                        </div>
+                        <div class="pc-stack">
+                            <div class="pc-stack-label">Tech Stack</div>
+                            <div class="pc-tags">
+                                <span class="pc-tag pc-tag-primary">Python</span>
+                                <span class="pc-tag pc-tag-primary">Scikit-learn</span>
+                                <span class="pc-tag pc-tag-primary">MLflow</span>
+                                <span class="pc-tag">SQL</span>
+                                <span class="pc-tag">Pandas</span>
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
-
-                <div class="project-card" data-roles="de ds">
-                    <h3>Media ETL Analytics Platform</h3>
-                    <p><strong><em>Domain: Media & Tech</em></strong></p>
-                    <div class="project-links">
-                        <a href="https://varunvaddi.github.io/imdb-media/" target="_blank" class="link">Architecture→</a>
-                        <a href="https://instacart-grocery.streamlit.app/" target="_blank" class="link">Demo→</a>
-                        <a href="https://datasets.imdbws.com/" target="_blank" class="link">Dataset→</a>
-                        <a href="https://github.com/varunvaddi/IMDb-Movie-Analytics" target="_blank" class="link">GitHub→</a>
+            
+                <!-- ── IMDB Analytics (DE) ─────────────────────────────────── -->
+                <div class="project-card" data-roles="de">
+                    <div class="pc-accent-bar"></div>
+                    <div class="pc-header">
+                        <div class="pc-domain">
+                            <div class="pc-domain-dot"></div>
+                            Media & Entertainment
+                        </div>
+                        <h3 class="pc-title">Media Content<br><em>Analytics Pipeline</em></h3>
+                        <p class="pc-overview">
+                            End-to-end AWS data pipeline processing 12.3M IMDb records with XGBoost movie rating prediction — combining batch ETL, feature engineering, ML training, real-time inference, and automated orchestration into a single production-grade system.
+                        </p>
+                        <div class="pc-links">
+                            <a href="https://github.com/varunvaddi/IMDb-Movie-Analytics" target="_blank" class="pc-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                GitHub
+                            </a>
+                            <a href="#" class="pc-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                Architecture
+                            </a>
+                            <a href="https://varunvaddi.grafana.net" target="_blank" class="pc-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                                Dashboards
+                            </a>
+                        </div>
                     </div>
-                    <p>End-to-end AWS data pipeline processing 12.3M IMDb records with XGBoost movie rating prediction (R²=0.664) — S3, Glue, Athena, SageMaker, EventBridge, Grafana.</p>
-                    <p><b>Data Engineering:</b> Batch ETL pipeline (AWS Glue PySpark) reduced 12.3M raw records → 309K clean movies with 99%+ data quality via Bronze-Silver-Gold architecture. Decade-partitioned Parquet achieved 10x compression over CSV; Athena serverless warehouse enables ad-hoc SQL with zero infrastructure cost.</p>
-                    <p><b>Machine Learning:</b> Engineered 43 ML features including director reputation metrics from 500MB dataset processed in cloud. Iterated 4 XGBoost versions — identified director historical ratings as key missing signal, improving R² from 0.306 → 0.664. SageMaker endpoint predicts Schindler's List at 9.11 vs 9.0 actual.</p>
-                    <p><b>Monitoring:</b> Automated full pipeline via EventBridge + Lambda on daily schedule — 3 Glue jobs run in sequence, ~16 min runtime, zero manual intervention. Pipeline health monitored via Grafana Cloud dashboards connected to Athena and SNS alerting on job failures.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">AWS S3</span>
-                        <span class="tech-tag">AWS Glue</span>
-                        <span class="tech-tag">AWS Athena</span>
-                        <span class="tech-tag">SageMaker</span>
-                        <span class="tech-tag">Grafana</span>
-                        <span class="tech-tag">EventBridge</span>
-                        <span class="tech-tag">SNS</span>
+                    <div class="pc-body">
+                        <div class="pc-section">
+                            <div class="pc-section-icon pc-icon-orange">⚙️</div>
+                            <div class="pc-section-content">
+                                <div class="pc-section-label pc-label-orange">Data Engineering</div>
+                                <div class="pc-section-text">Batch ETL pipeline (AWS Glue PySpark) reduced <span class="pc-hl pc-hl-orange">12.3M records → 309K clean movies</span> with 99%+ data quality. Decade-partitioned Parquet achieved <span class="pc-hl pc-hl-orange">10x compression</span> over CSV.</div>
+                            </div>
+                        </div>
+                        <div class="pc-section">
+                            <div class="pc-section-icon pc-icon-green">🤖</div>
+                            <div class="pc-section-content">
+                                <div class="pc-section-label pc-label-green">Machine Learning</div>
+                                <div class="pc-section-text">Engineered 43 ML features; iterated 4 XGBoost versions improving R² from <span class="pc-hl pc-hl-green">0.306 → 0.664</span>. SageMaker endpoint predicts Schindler's List at 9.11 vs 9.0 actual.</div>
+                            </div>
+                        </div>
+                        <div class="pc-section">
+                            <div class="pc-section-icon pc-icon-blue">⚡</div>
+                            <div class="pc-section-content">
+                                <div class="pc-section-label pc-label-blue">Orchestration</div>
+                                <div class="pc-section-text">Automated via <span class="pc-hl pc-hl-blue">EventBridge + Lambda</span> on daily schedule — 3 Glue jobs in sequence, <span class="pc-hl pc-hl-blue">~16 min runtime, zero manual intervention</span>.</div>
+                            </div>
+                        </div>
+                        <div class="pc-stack">
+                            <div class="pc-stack-label">Tech Stack</div>
+                            <div class="pc-tags">
+                                <span class="pc-tag pc-tag-primary">AWS Glue</span>
+                                <span class="pc-tag pc-tag-primary">SageMaker</span>
+                                <span class="pc-tag pc-tag-primary">Athena</span>
+                                <span class="pc-tag pc-tag-primary">XGBoost</span>
+                                <span class="pc-tag">EventBridge</span>
+                                <span class="pc-tag">Lambda</span>
+                                <span class="pc-tag">Grafana</span>
+                                <span class="pc-tag">PySpark</span>
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
-                        
+            
             </div>
+            
         </div>
     </section>
 
