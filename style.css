@@ -799,7 +799,7 @@ html[data-theme="dark"] .project-card {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    font-family: 'DM Mono', monospace;
+    font-family: 'DM Mono', monospace !important;
     font-size: 10px;
     font-weight: 500;
     color: var(--pc-text-dim);
@@ -817,7 +817,7 @@ html[data-theme="dark"] .project-card {
 }
 
 .pc-title {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'DM Serif Display', serif !important;
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--pc-text);
@@ -832,7 +832,7 @@ html[data-theme="dark"] .project-card {
 }
 
 .pc-overview {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif !important;
     font-size: 0.8rem;
     font-weight: 400;
     color: var(--pc-text-mid);
@@ -850,7 +850,7 @@ html[data-theme="dark"] .project-card {
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    font-family: 'DM Mono', monospace;
+    font-family: 'DM Mono', monospace !important;
     font-size: 11px;
     font-weight: 500;
     color: var(--pc-text-mid);
@@ -918,7 +918,7 @@ html[data-theme="dark"] .project-card {
 .pc-section-content { flex: 1; min-width: 0; }
 
 .pc-section-label {
-    font-family: 'DM Mono', monospace;
+    font-family: 'DM Mono', monospace !important;
     font-size: 9px;
     font-weight: 500;
     text-transform: uppercase;
@@ -931,7 +931,7 @@ html[data-theme="dark"] .project-card {
 .pc-label-blue   { color: var(--pc-blue); }
 
 .pc-section-text {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif !important;
     font-size: 0.75rem;
     font-weight: 400;
     color: var(--pc-text-mid);
@@ -939,7 +939,7 @@ html[data-theme="dark"] .project-card {
 }
 
 .pc-hl {
-    font-family: 'DM Mono', monospace;
+    font-family: 'DM Mono', monospace !important;
     font-weight: 500;
     font-size: 0.7rem;
     padding: 0 4px;
@@ -957,7 +957,7 @@ html[data-theme="dark"] .project-card {
 }
 
 .pc-stack-label {
-    font-family: 'DM Mono', monospace;
+    font-family: 'DM Mono', monospace !important;
     font-size: 9px;
     font-weight: 500;
     text-transform: uppercase;
@@ -973,7 +973,7 @@ html[data-theme="dark"] .project-card {
 }
 
 .pc-tag {
-    font-family: 'DM Mono', monospace;
+    font-family: 'DM Mono', monospace !important;
     font-size: 11px;
     font-weight: 500;
     padding: 3px 9px;
