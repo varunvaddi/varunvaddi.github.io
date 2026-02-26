@@ -828,6 +828,7 @@ html[data-theme="dark"] .project-card {
 
 .pc-title em {
     font-style: italic;
+    font-family: 'DM Serif Display', serif !important;
     color: var(--pc-accent);
 }
 
