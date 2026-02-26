@@ -1,7 +1,7 @@
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Typewriter Effect with colored words
+    // ── Typewriter Effect ──────────────────────────────────────────
     const phrases = [
         "Hi, I'm <span class='highlight'>Varun Vaddi</span>",
         "I'm a <span class='highlight'>Data Scientist</span>",
@@ -17,75 +17,52 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function typeText() {
         const typedTextElement = document.getElementById('typed-text');
-        
-        if (!typedTextElement) {
-            return;
-        }
+        if (!typedTextElement) return;
 
         const currentPhrase = phrases[currentPhraseIndex];
-        
+
         if (isDeleting) {
             const tempDiv = document.createElement('div');
             tempDiv.innerHTML = currentPhrase;
             const textOnly = tempDiv.textContent || tempDiv.innerText;
-            
             const currentDisplay = typedTextElement.textContent || typedTextElement.innerText;
             const newText = textOnly.substring(0, currentDisplay.length - 1);
-            
+
             let charCount = 0;
             let htmlOutput = '';
             let inTag = false;
-            
+
             for (let i = 0; i < currentPhrase.length; i++) {
-                if (currentPhrase[i] === '<') {
-                    inTag = true;
-                    htmlOutput += currentPhrase[i];
-                } else if (currentPhrase[i] === '>') {
-                    inTag = false;
-                    htmlOutput += currentPhrase[i];
-                } else if (inTag) {
-                    htmlOutput += currentPhrase[i];
-                } else {
-                    if (charCount < newText.length) {
-                        htmlOutput += currentPhrase[i];
-                        charCount++;
-                    }
+                if (currentPhrase[i] === '<') { inTag = true; htmlOutput += currentPhrase[i]; }
+                else if (currentPhrase[i] === '>') { inTag = false; htmlOutput += currentPhrase[i]; }
+                else if (inTag) { htmlOutput += currentPhrase[i]; }
+                else {
+                    if (charCount < newText.length) { htmlOutput += currentPhrase[i]; charCount++; }
                 }
             }
-            
+
             typedTextElement.innerHTML = htmlOutput;
             currentCharIndex--;
             typingSpeed = 50;
-            
-            if (newText.length === 0) {
-                currentCharIndex = 0;
-            }
+            if (newText.length === 0) currentCharIndex = 0;
+
         } else {
             const tempDiv = document.createElement('div');
             tempDiv.innerHTML = currentPhrase;
-            const textOnly = tempDiv.textContent || tempDiv.innerText;
-            
+
             let charCount = 0;
             let htmlOutput = '';
             let inTag = false;
-            
+
             for (let i = 0; i < currentPhrase.length; i++) {
-                if (currentPhrase[i] === '<') {
-                    inTag = true;
-                    htmlOutput += currentPhrase[i];
-                } else if (currentPhrase[i] === '>') {
-                    inTag = false;
-                    htmlOutput += currentPhrase[i];
-                } else if (inTag) {
-                    htmlOutput += currentPhrase[i];
-                } else {
-                    if (charCount < currentCharIndex) {
-                        htmlOutput += currentPhrase[i];
-                        charCount++;
-                    }
+                if (currentPhrase[i] === '<') { inTag = true; htmlOutput += currentPhrase[i]; }
+                else if (currentPhrase[i] === '>') { inTag = false; htmlOutput += currentPhrase[i]; }
+                else if (inTag) { htmlOutput += currentPhrase[i]; }
+                else {
+                    if (charCount < currentCharIndex) { htmlOutput += currentPhrase[i]; charCount++; }
                 }
             }
-            
+
             typedTextElement.innerHTML = htmlOutput;
             currentCharIndex++;
             typingSpeed = 100;
@@ -107,36 +84,30 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(typeText, typingSpeed);
     }
 
-    // Start typewriter
     setTimeout(typeText, 500);
 
-    // Theme Toggle
+
+    // ── Theme Toggle ───────────────────────────────────────────────
     const themeToggle = document.getElementById('theme-toggle');
     const html = document.documentElement;
-    const themeIcon = themeToggle.querySelector('.theme-icon');
+    const themeIcon = themeToggle ? themeToggle.querySelector('.theme-icon') : null;
 
     if (themeToggle && themeIcon) {
-        // Load saved theme or default to light
         const savedTheme = localStorage.getItem('theme') || 'light';
         html.setAttribute('data-theme', savedTheme);
         themeIcon.textContent = savedTheme === 'light' ? '🌙' : '☀️';
 
-        // Toggle theme
         themeToggle.addEventListener('click', () => {
             const currentTheme = html.getAttribute('data-theme');
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
             themeIcon.textContent = newTheme === 'light' ? '🌙' : '☀️';
-            
-            console.log('Theme changed to:', newTheme);
         });
-    } else {
-        console.error('Theme toggle elements not found');
     }
 
-    // Mobile Menu Toggle
+
+    // ── Mobile Menu ────────────────────────────────────────────────
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
@@ -147,7 +118,6 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
         });
 
-        // Close mobile menu when clicking on a link
         mobileMenuItems.forEach(item => {
             item.addEventListener('click', () => {
                 mobileMenu.classList.remove('active');
@@ -155,7 +125,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
-        // Close mobile menu when clicking outside
         mobileMenu.addEventListener('click', (e) => {
             if (e.target === mobileMenu) {
                 mobileMenu.classList.remove('active');
@@ -164,84 +133,106 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Smooth scrolling
+
+    // ── Smooth Scrolling ───────────────────────────────────────────
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                // Close mobile menu if open
                 if (mobileMenu && mobileMenu.classList.contains('active')) {
                     mobileMenu.classList.remove('active');
                     document.body.style.overflow = '';
                 }
-                
-                // Scroll to target with offset for fixed nav
                 const navHeight = 120;
-                const targetPosition = target.offsetTop - navHeight;
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
+                window.scrollTo({ top: target.offsetTop - navHeight, behavior: 'smooth' });
             }
         });
     });
 
-    // Scroll effect for capsule nav
+
+    // ── Capsule Nav Scroll ─────────────────────────────────────────
     const capsuleNav = document.querySelector('.capsule-nav');
     if (capsuleNav) {
-        let lastScroll = 0;
         window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-            
-            // Add shadow on scroll
-            //if (currentScroll > 50) {
-             //   capsuleNav.style.boxShadow = '0 10px 40px rgba(0, 0, 0, 0.15)';
-            //} else {
-              //  capsuleNav.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.1)';
-           // }
-            
-            lastScroll = currentScroll;
+            // shadow logic here if needed
         });
     }
 
-    // Active section highlighting
+
+    // ── Active Section Highlight ───────────────────────────────────
     const sections = document.querySelectorAll('section[id]');
     const navItems = document.querySelectorAll('.nav-item');
-    
+
     function highlightActiveSection() {
         const scrollPosition = window.pageYOffset + 150;
-        
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.offsetHeight;
             const sectionId = section.getAttribute('id');
-            
             if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
                 navItems.forEach(item => {
                     item.classList.remove('active');
-                    if (item.getAttribute('href') === `#${sectionId}`) {
-                        item.classList.add('active');
-                    }
+                    if (item.getAttribute('href') === `#${sectionId}`) item.classList.add('active');
                 });
             }
         });
     }
-    
+
     window.addEventListener('scroll', highlightActiveSection);
 
-    // Fade-in animations
+
+    // ── Role Toggle ────────────────────────────────────────────────
+    let currentRole = 'de';
+
+    function applyRole(role, animate) {
+        const cards = document.querySelectorAll('#projectsGrid .project-card');
+        cards.forEach(card => {
+            const roles = card.dataset.roles ? card.dataset.roles.split(' ') : [];
+            if (roles.includes(role)) {
+                card.classList.remove('role-hidden');
+                if (animate) {
+                    card.classList.remove('role-visible');
+                    void card.offsetWidth; // reflow to retrigger animation
+                    card.classList.add('role-visible');
+                } else {
+                    card.classList.add('role-visible');
+                }
+            } else {
+                card.classList.remove('role-visible');
+                card.classList.add('role-hidden');
+            }
+        });
+    }
+
+    window.switchRole = function(role) {
+        if (role === currentRole) return;
+        currentRole = role;
+
+        // Move pill
+        document.getElementById('toggleSlider').classList.toggle('slide-right', role === 'ds');
+
+        // Button states
+        document.getElementById('btn-de').classList.toggle('active', role === 'de');
+        document.getElementById('btn-ds').classList.toggle('active', role === 'ds');
+
+        applyRole(role, true);
+    };
+
+    // Init toggle on load (no animation on first paint)
+    applyRole('de', false);
+
+
+    // ── Fade-in on Scroll (skips role-hidden cards) ────────────────
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
+            // Don't reveal cards that are hidden by the role toggle
+            if (entry.isIntersecting && !entry.target.classList.contains('role-hidden')) {
                 entry.target.style.opacity = '1';
                 entry.target.style.transform = 'translateY(0)';
             }
         });
-    }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
-    });
+    }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
 
     document.querySelectorAll('.project-card, .skill-category, .timeline-item, .recommendation-card, .education-card, .certification-card').forEach(el => {
         el.style.opacity = '0';
@@ -250,14 +241,13 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    // Brand circle click to scroll to top
+
+    // ── Brand → Scroll to Top ──────────────────────────────────────
     const navBrand = document.querySelector('.nav-brand');
     if (navBrand) {
         navBrand.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
+
 });
