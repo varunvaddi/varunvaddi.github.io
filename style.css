@@ -306,6 +306,11 @@ html[data-theme="dark"] .capsule-container {
     margin-left: 5px;
 }
 
+#typed-text span {
+    font-family: 'DM Serif Display', serif !important;
+}
+
+
 @keyframes blink {
     0%, 50%  { opacity: 1; }
     51%, 100% { opacity: 0; }
