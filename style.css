@@ -378,16 +378,6 @@ section {
 #recommendations { background: var(--bg-alt); }
 #contact         { background: var(--bg); }
 
-/* project-card intentionally excluded — uses pc-* scoped vars */
-
-section:nth-child(odd) .education-card,
-section:nth-child(odd) .recommendation-card,
-section:nth-child(odd) .skill-category { background: var(--bg-alt); }
-
-section:nth-child(even) .education-card,
-section:nth-child(even) .recommendation-card,
-section:nth-child(even) .skill-category { background: var(--bg); }
-
 
 h2 {
     font-family: 'DM Serif Display', serif;
@@ -609,8 +599,12 @@ html[data-theme="dark"] .timeline-content {
     margin-right: auto;
 }
 
+html[data-theme="dark"] .recommendation-card {
+    background: var(--bg-alt);
+}
+
 .recommendation-card {
-    background: var(--bg);
+    background: #ffffff;
     padding: 2.5rem;
     border-radius: 1rem;
     border: 1px solid var(--border);
@@ -1091,8 +1085,12 @@ html[data-theme="dark"] .project-card {
     margin-top: 3rem;
 }
 
+html[data-theme="dark"] .skill-category {
+    background: var(--bg-alt);
+}
+
 .skill-category {
-    background: var(--bg);
+    background: #ffffff; /*var(--bg)*/
     padding: 2rem;
     border-radius: 0.75rem;
     border: 1px solid var(--border);
@@ -1134,8 +1132,12 @@ html[data-theme="dark"] .project-card {
     margin-top: 3rem;
 }
 
+html[data-theme="dark"] .education-card {
+    background: var(--bg-alt);
+}
+
 .education-card {
-    background: var(--bg);
+    background: #ffffff;
     padding: 2rem;
     border-radius: 0.75rem;
     border: 1px solid var(--border);
