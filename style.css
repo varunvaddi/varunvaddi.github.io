@@ -1091,21 +1091,17 @@ html[data-theme="dark"] .certification-card {
     font-size: 0.8rem;
 }
 
-a.cert-link,
-a.cert-link:link,
-a.cert-link:visited,
-a.cert-link:-webkit-any-link {
-    font-family: 'DM Mono', monospace;
-    color: var(--primary) !important;
+.cert-link {
+    color: var(--primary);
     text-decoration: none;
-    font-size: 0.85rem;
+    font-family: 'DM Mono', monospace;
     font-weight: 500;
-    transition: color 0.2s;
+    font-size: 0.85rem;
+    transition: color 0.3s;
 }
 
-a.cert-link:hover {
-    color: var(--primary-dark) !important;
-}
+.cert-link:hover { color: var(--primary-dark); }
+
 
 
 /* ===== SKILLS ===== */
