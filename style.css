@@ -600,7 +600,7 @@ html[data-theme="dark"] .timeline-content {
 }
 
 html[data-theme="dark"] .recommendation-card {
-    background: var(--bg-alt);
+    background: var(--bg);
 }
 
 .recommendation-card {
@@ -609,8 +609,19 @@ html[data-theme="dark"] .recommendation-card {
     border-radius: 1rem;
     border: 1px solid var(--border);
     position: relative;
+    overflow: hidden;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(42, 37, 32, 0.05);
+}
+
+.recommendation-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary) 0%, #e8620a 40%, #b8860b 100%);
 }
 
 .recommendation-card:hover {
@@ -1029,6 +1040,18 @@ html[data-theme="dark"] .certification-card {
     border-radius: 12px;
     padding: 1.5rem;
     transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.certification-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary) 0%, #e8620a 40%, #b8860b 100%);
 }
 
 .certification-card:hover {
@@ -1090,14 +1113,26 @@ html[data-theme="dark"] .certification-card {
 }
 
 html[data-theme="dark"] .skill-category {
-    background: var(--bg-alt);
+    background: var(--bg);
 }
 
 .skill-category {
-    background: #ffffff; /*var(--bg)*/
+    background: #ffffff;
     padding: 2rem;
     border-radius: 0.75rem;
     border: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary) 0%, #e8620a 40%, #b8860b 100%);
 }
 
 .skill-category h3 {
@@ -1151,6 +1186,18 @@ html[data-theme="dark"] .education-card {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.education-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary) 0%, #e8620a 40%, #b8860b 100%);
 }
 
 .education-card:hover {
