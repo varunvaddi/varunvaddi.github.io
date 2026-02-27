@@ -368,7 +368,9 @@ section {
     border-radius: 50px;
 }
 
-#hero            { background: var(--bg); }
+html[data-theme="light"] #hero { background: #ffffff; }
+html[data-theme="dark"]  #hero { background: var(--bg); }
+
 #about           { background: var(--bg-alt); }
 #experience      { background: var(--bg); }
 #projects        { background: var(--bg-alt); }
@@ -1089,17 +1091,15 @@ html[data-theme="dark"] .certification-card {
     font-size: 0.8rem;
 }
 
-.cert-link {
+.cert-link,
+.cert-link:link,
+.cert-link:visited {
     font-family: 'DM Mono', monospace;
     color: var(--primary);
     text-decoration: none;
     font-size: 0.85rem;
     font-weight: 500;
     transition: color 0.2s;
-}
-
-.cert-link:visited {
-    color: var(--primary);
 }
 
 .cert-link:hover { color: var(--primary-dark); }
