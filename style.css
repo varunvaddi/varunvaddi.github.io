@@ -381,12 +381,10 @@ section {
 /* project-card intentionally excluded — uses pc-* scoped vars */
 
 section:nth-child(odd) .education-card,
-section:nth-child(odd) .timeline-content,
 section:nth-child(odd) .recommendation-card,
 section:nth-child(odd) .skill-category { background: var(--bg-alt); }
 
 section:nth-child(even) .education-card,
-section:nth-child(even) .timeline-content,
 section:nth-child(even) .recommendation-card,
 section:nth-child(even) .skill-category { background: var(--bg); }
 
@@ -447,8 +445,13 @@ h2 {
     z-index: 1;
 }
 
+html[data-theme="dark"] .timeline-content {
+    background: var(--bg-alt);
+}
+
+
 .timeline-content {
-    background: var(--bg);
+    background: #ffffff;
     padding: 2rem;
     border-radius: 1rem;
     border: 1px solid var(--border);
