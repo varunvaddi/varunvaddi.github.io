@@ -1091,9 +1091,9 @@ html[data-theme="dark"] .certification-card {
     font-size: 0.8rem;
 }
 
-.link,
-.link:link,
-.link:visited {
+.cert-link,
+.cert-link:link,
+.cert-link:visited {
     color: var(--primary);
     text-decoration: none;
     font-family: 'DM Mono', monospace;
@@ -1102,7 +1102,7 @@ html[data-theme="dark"] .certification-card {
     transition: color 0.3s;
 }
 
-.link:hover { color: var(--primary-dark); }
+.cert-link:hover { color: var(--primary-dark); }
 
 
 /* ===== SKILLS ===== */
