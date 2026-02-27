@@ -1030,6 +1030,10 @@ html[data-theme="dark"] .project-card {
     transition: color 0.2s;
 }
 
+.cert-link:visited {
+    color: var(--primary);
+}
+
 .cert-link:hover { color: var(--primary-dark); }
 
 /* ===== SKILLS ===== */
