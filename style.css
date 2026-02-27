@@ -379,15 +379,22 @@ section {
 #contact         { background: var(--bg); }
 
 /* project-card intentionally excluded — uses pc-* scoped vars */
-section:nth-child(odd) .education-card,
-section:nth-child(odd) .timeline-content,
-section:nth-child(odd) .recommendation-card,
-section:nth-child(odd) .skill-category { background: var(--bg-alt); }
+.education-card,
+.timeline-content,
+.recommendation-card,
+.skill-category,
+.certification-card {
+    background: #ffffff;
+}
 
-section:nth-child(even) .education-card,
-section:nth-child(even) .timeline-content,
-section:nth-child(even) .recommendation-card,
-section:nth-child(even) .skill-category { background: var(--bg); }
+html[data-theme="dark"] .education-card,
+html[data-theme="dark"] .timeline-content,
+html[data-theme="dark"] .recommendation-card,
+html[data-theme="dark"] .skill-category,
+html[data-theme="dark"] .certification-card {
+    background: #1c1814;
+}
+
 
 h2 {
     font-family: 'DM Serif Display', serif;
