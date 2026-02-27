@@ -1019,8 +1019,12 @@ html[data-theme="dark"] .project-card {
     margin-top: 2rem;
 }
 
-.certification-card {
+html[data-theme="dark"] .certification-card {
     background: var(--bg-alt);
+}
+
+.certification-card {
+    background: #ffffff;
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 1.5rem;
