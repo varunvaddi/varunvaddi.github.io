@@ -250,5 +250,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // ── Dashboards Modal ───────────────────────────────────────────
+    window.openDashboardsModal = function(event) {
+        event.preventDefault();
+        const modal = document.getElementById('dashboardsModal');
+        if (modal) modal.style.display = 'block';
+    };
+    
+    window.closeDashboardsModal = function() {
+        const modal = document.getElementById('dashboardsModal');
+        if (modal) modal.style.display = 'none';
+    };
+    
+    // Optional: Close modal when clicking outside the modal content
+    window.addEventListener('click', function(event) {
+        const modal = document.getElementById('dashboardsModal');
+        if (modal && event.target === modal) {
+            modal.style.display = 'none';
+        }
+
 
 });
