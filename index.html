@@ -342,10 +342,9 @@
                         </div>
                         <h3 class="pc-title">Digital Ads<br><em>Risk Engine</em></h3>
                         <p class="pc-overview">
-                            AI-powered RAG system for digital advertising compliance, automating Google Ads policy review across 341 regulatory chunks from 25 documents to enable scalable, real-time ad moderation.
+                            Production-grade RAG system for Google Ads policy compliance, orchestrating a LangGraph state machine across 316 clean policy chunks to deliver real-time ad moderation with 90% decision accuracy and full citation transparency.
                         </p>
                         <div class="pc-links">
-                        
                             <a href="https://gooogle-rag.streamlit.app/" target="_blank" rel="noopener noreferrer" class="pc-link">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
                                 Demo
@@ -354,7 +353,7 @@
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                                 Dataset
                             </a>
-                            <a href="https://github.com/varunvaddi/Google-Ads-Policy-RAG" target="_blank" class="pc-link">
+                            <a href="https://github.com/varunvaddi/google-ads-rag-v2" target="_blank" class="pc-link">
                                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                                 GitHub
                             </a>
@@ -369,31 +368,35 @@
                             <div class="pc-section-icon pc-icon-orange">⚡</div>
                             <div class="pc-section-content">
                                 <div class="pc-section-label pc-label-orange">Performance</div>
-                                <div class="pc-section-text">Hybrid retrieval (BM25 + BGE + reranking) achieved <span class="pc-hl pc-hl-orange">80% accuracy, 78% Recall@5</span>, reducing review time from 5–10 min to <span class="pc-hl pc-hl-orange">&lt;1 sec</span> per ad with &lt;350ms query latency.</div>
+                                <div class="pc-section-text">Hybrid retrieval (BM25 + BGE-large + cross-encoder reranking) achieved <span class="pc-hl pc-hl-orange">90% decision accuracy, 77.8% Recall@5, 0.778 MRR</span> — up from 80% in v1 — with confidence calibration improved from 29% to <span class="pc-hl pc-hl-orange">81.4%</span>.</div>
                             </div>
                         </div>
                         <div class="pc-section">
                             <div class="pc-section-icon pc-icon-green">🤖</div>
                             <div class="pc-section-content">
-                                <div class="pc-section-label pc-label-green">LLM Integration</div>
-                                <div class="pc-section-text">Gemini-powered structured outputs (Pydantic schemas) delivered <span class="pc-hl pc-hl-green">zero hallucinations</span>, 100% citation transparency, and automated risk scoring with confidence intervals.</div>
+                                <div class="pc-section-label pc-label-green">LangGraph Orchestration</div>
+                                <div class="pc-section-text">Replaced sequential pipeline with a <span class="pc-hl pc-hl-green">6-node LangGraph state machine</span> — query classification, hybrid retrieval, quality-based retry routing, Ollama llama3.2 generation, policy-path override validation, and confidence-gated escalation.</div>
                             </div>
                         </div>
                         <div class="pc-section">
                             <div class="pc-section-icon pc-icon-blue">📈</div>
                             <div class="pc-section-content">
-                                <div class="pc-section-label pc-label-blue">Business Impact</div>
-                                <div class="pc-section-text">Compliance at scale — <span class="pc-hl pc-hl-blue">1,000+ ads/sec capacity</span>, reduced manual review costs, and cut policy violations by <span class="pc-hl pc-hl-blue">40%</span> through real-time risk detection.</div>
+                                <div class="pc-section-label pc-label-blue">Evaluation</div>
+                                <div class="pc-section-text">Full 8-metric eval suite — Recall@5, MRR, Precision@5, P95 latency, and custom LLM-judge metrics (faithfulness <span class="pc-hl pc-hl-blue">0.63</span>, context recall <span class="pc-hl pc-hl-blue">0.80</span>, context precision <span class="pc-hl pc-hl-blue">0.80</span>) using auto-generated dataset via Ollama.</div>
                             </div>
                         </div>
                         <div class="pc-stack">
                             <div class="pc-stack-label">Tech Stack</div>
                             <div class="pc-tags">
                                 <span class="pc-tag pc-tag-primary">RAG</span>
-                                <span class="pc-tag pc-tag-primary">LLM</span>
+                                <span class="pc-tag pc-tag-primary">LangGraph</span>
+                                <span class="pc-tag pc-tag-primary">Ollama</span>
                                 <span class="pc-tag pc-tag-primary">FAISS</span>
-                                <span class="pc-tag pc-tag-primary">Embeddings</span>
-                                <span class="pc-tag">Web Scraping</span>
+                                <span class="pc-tag pc-tag-primary">BGE-large</span>
+                                <span class="pc-tag">BM25</span>
+                                <span class="pc-tag">LangChain</span>
+                                <span class="pc-tag">Pydantic</span>
+                                <span class="pc-tag">Streamlit</span>
                                 <span class="pc-tag">Python</span>
                             </div>
                         </div>
