@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // ── Typewriter Effect ──────────────────────────────────────────
     const phrases = [
         "Hi, I'm <span class='highlight'>Varun Vaddi</span>",
-        "I'm a <span class='highlight'>Data Scientist</span>",
-        "I build <span class='highlight'>AI/ML Models</span>",
-        "I also build <span class='highlight'>Data Pipelines</span>",
+        "I'm a <span class='highlight'>Data & AI Engineer</span>",
+        "I build <span class='highlight'>Data Pipelines</span>",
+        "I also build <span class='highlight'>AI/ML Models</span>",
         "I'm looking for <span class='highlight'>Full-Time Opportunities</span>"
     ];
 
