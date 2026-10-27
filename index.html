@@ -9,6 +9,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style id="pipeline-styles">
+/* ── Project pipelines (static) ─────────────────────────────── */
+.pipe {
+    margin: 0 0 32px; padding: 18px 22px 12px;
+    background: var(--surface); border: 1px solid var(--rule); border-radius: 16px;
+}
+.pipe-hint {
+    font-family: 'Caveat', cursive; font-weight: 600;
+    font-size: 1.4rem; line-height: 1.2; color: var(--note); margin: 0 0 6px;
+}
+.pipe-flow { list-style: none; margin: 0; padding: 0; display: flex; align-items: flex-start; }
+.pipe-flow li {
+    flex: 1 1 0; min-width: 0; position: relative; margin-right: 22px;
+    display: flex; flex-direction: column; align-items: center; gap: 6px;
+    padding: 12px 4px; text-align: center; color: var(--accent);
+}
+.pipe-flow li:last-child { margin-right: 0; }
+.pipe-flow svg { width: 36px; height: 36px; }
+.pipe-name { font-weight: 600; font-size: .85rem; line-height: 1.2; color: var(--ink); }
+.nb { white-space: nowrap; }
+.pipe-tag { font-size: .75rem; line-height: 1.2; color: var(--ink-soft); }
+
+/* connector line + arrowhead between stages */
+.pipe-flow li:not(:last-child)::after {
+    content: ""; position: absolute; right: -22px; top: 29px; width: 22px; height: 2px;
+    background: color-mix(in srgb, var(--ink) 28%, transparent); border-radius: 2px;
+}
+.pipe-flow li:not(:last-child)::before {
+    content: ""; position: absolute; right: -22px; top: 26px; width: 6px; height: 6px;
+    border-top: 2px solid color-mix(in srgb, var(--ink) 28%, transparent);
+    border-right: 2px solid color-mix(in srgb, var(--ink) 28%, transparent);
+    transform: rotate(45deg);
+}
+
+@media (max-width: 640px) {
+    .pipe { padding: 16px 16px 8px; }
+    .pipe-flow { flex-direction: column; align-items: stretch; }
+    .pipe-flow li {
+        flex-direction: row; text-align: left; gap: 0 14px; margin: 0 0 18px; padding: 4px 4px;
+        flex-wrap: wrap; align-items: center;
+    }
+    .pipe-flow li:last-child { margin-bottom: 8px; }
+    .pipe-flow svg { width: 30px; height: 30px; }
+    .pipe-name, .pipe-tag { display: block; }
+    .pipe-flow li { display: grid; grid-template-columns: 30px 1fr; grid-template-areas: "i n" "i t"; }
+    .pipe-flow li svg { grid-area: i; align-self: center; }
+    .pipe-flow li .pipe-name { grid-area: n; }
+    .pipe-flow li .pipe-tag { grid-area: t; }
+    .pipe-flow li:not(:last-child)::after { right: auto; left: 18px; top: auto; bottom: -16px; width: 2px; height: 14px; }
+    .pipe-flow li:not(:last-child)::before { right: auto; left: 15px; top: auto; bottom: -16px; transform: rotate(135deg); }
+}
+    </style>
     <script>
         // Set theme before first paint so there's no flash
         (function () {
