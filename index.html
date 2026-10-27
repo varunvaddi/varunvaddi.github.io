@@ -77,7 +77,7 @@
                 <div class="prose">
                     <p>I like building things that run end to end, from the moment data arrives to the moment someone makes a decision with it. That's taken me through Kafka and Snowflake, dbt and SageMaker, XGBoost and RAG, and I've never been bored.</p>
                     <p>My favorite problems are the ones where the data is messy and the result actually matters: cleaning up DNA sequencing data so conservation scientists can trust it, helping an admissions office decide faster, or cutting a six-hour feature prep job down to 23 seconds.</p>
-                    <p>Away from the keyboard, I keep up with geopolitics and tech news, and I’ll watch a movie in any language as long as it’s in the original with subtitles. I follow badminton and cricket, try out new food whenever I can, and love a good trip, where I collect photos and fridge magnets</p>
+                    <p>Away from the keyboard, I keep up with geopolitics and tech news, and I'll watch a movie in any language as long as it's in the original with subtitles. I follow badminton and cricket, try out new food whenever I can, and love a good trip, where I collect photos and fridge magnets.</p>
                     <p class="margin-note">I tend to overfit on Fridays, fine-tune on Saturdays, and regularize on Sundays.</p>
                 </div>
             </div>
@@ -162,6 +162,16 @@
                         <p class="project-kicker">Travel and hospitality</p>
                         <h3>Urban Mobility Analytics Platform</h3>
                         <p class="project-lede">What would it take to forecast demand and price taxis in real time? I used NYC taxi data (8.6M+ trips and $180M+ in quarterly revenue) to find out.</p>
+                        <div class="pipe">
+                        <p class="pipe-hint">Follow the data</p>
+                        <ol class="pipe-flow" aria-label="Urban Mobility pipeline">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span class="pipe-name">NYC TLC data</span><span class="pipe-tag">source</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg><span class="pipe-name">Kafka</span><span class="pipe-tag">streaming</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg><span class="pipe-name">Snowflake</span><span class="pipe-tag">warehouse</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg><span class="pipe-name">dbt + Airflow</span><span class="pipe-tag">transform</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16"/><path d="M8 20v-6M12 20V9M16 20v-9"/></svg><span class="pipe-name">Tableau</span><span class="pipe-tag">dashboards</span></li>
+                        </ol>
+                    </div>
                         <dl class="project-facts">
                             <div>
                                 <dt>What I built</dt>
@@ -189,6 +199,17 @@
                         <p class="project-kicker">Media and tech</p>
                         <h3>Digital Ads Risk Engine</h3>
                         <p class="project-lede">Can an AI check an ad against Google's policies and show its work? I built a retrieval system over 316 policy chunks that explains every decision with citations.</p>
+                        <div class="pipe">
+                        <p class="pipe-hint">Follow the data</p>
+                        <ol class="pipe-flow" aria-label="Digital Ads Risk Engine flow">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span class="pipe-name">Google Ads policies</span><span class="pipe-tag">316 chunks</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 12h4M11 12l6-5M11 12l6 5"/></svg><span class="pipe-name">LangGraph</span><span class="pipe-tag">orchestration</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M21 21l-5-5"/></svg><span class="pipe-name">BM25 + <span class="nb">BGE-large</span></span><span class="pipe-tag">hybrid retrieval</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg><span class="pipe-name"><span class="nb">Cross-encoder</span></span><span class="pipe-tag">reranking</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg><span class="pipe-name">Ollama llama3.2</span><span class="pipe-tag">generation</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16"/><path d="M8 20v-6M12 20V9M16 20v-9"/></svg><span class="pipe-name">Streamlit</span><span class="pipe-tag">demo app</span></li>
+                        </ol>
+                    </div>
                         <dl class="project-facts">
                             <div>
                                 <dt>What I built</dt>
@@ -216,6 +237,17 @@
                         <p class="project-kicker">Retail</p>
                         <h3>Grocery ML and Recommendation Platform</h3>
                         <p class="project-lede">Which customers will reorder, which are about to leave, and what is each one worth? I worked through 10.6M grocery orders to answer all three.</p>
+                        <div class="pipe">
+                        <p class="pipe-hint">Follow the data</p>
+                        <ol class="pipe-flow" aria-label="Grocery ML pipeline">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span class="pipe-name">Instacart data</span><span class="pipe-tag">10.6M orders</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg><span class="pipe-name">Databricks + Spark</span><span class="pipe-tag">processing</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="1.8"/><circle cx="6" cy="18" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="18" cy="6" r="1.8"/><circle cx="18" cy="18" r="1.8"/><path d="M7.5 7l3.2 3.8M7.5 17l3.2-3.8M13.5 10.8L16.6 7M13.5 13.2l3.1 3.8"/></svg><span class="pipe-name">XGBoost + Hyperopt</span><span class="pipe-tag">modeling</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1"/></svg><span class="pipe-name">MLflow</span><span class="pipe-tag">tracking</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M21 21l-5-5"/></svg><span class="pipe-name">SHAP</span><span class="pipe-tag">explainability</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16"/><path d="M8 20v-6M12 20V9M16 20v-9"/></svg><span class="pipe-name">Streamlit</span><span class="pipe-tag">dashboard</span></li>
+                        </ol>
+                    </div>
                         <dl class="project-facts">
                             <div>
                                 <dt>What I built</dt>
@@ -243,6 +275,17 @@
                         <p class="project-kicker">Media and entertainment</p>
                         <h3>Movie Data Analytics Platform</h3>
                         <p class="project-lede">How far can you get predicting a movie's rating from public data? I built the whole stack on AWS to find out, starting from 12.3M raw IMDb records.</p>
+                        <div class="pipe">
+                        <p class="pipe-hint">Follow the data</p>
+                        <ol class="pipe-flow" aria-label="Movie Data Analytics pipeline">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg><span class="pipe-name">IMDb datasets</span><span class="pipe-tag">12.3M records</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 12h4M11 12l6-5M11 12l6 5"/></svg><span class="pipe-name">AWS Glue</span><span class="pipe-tag">PySpark ETL</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg><span class="pipe-name">Athena</span><span class="pipe-tag">Parquet by decade</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="1.8"/><circle cx="6" cy="18" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="18" cy="6" r="1.8"/><circle cx="18" cy="18" r="1.8"/><path d="M7.5 7l3.2 3.8M7.5 17l3.2-3.8M13.5 10.8L16.6 7M13.5 13.2l3.1 3.8"/></svg><span class="pipe-name">SageMaker</span><span class="pipe-tag">XGBoost</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span class="pipe-name">EventBridge + Lambda</span><span class="pipe-tag">scheduling</span></li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16"/><path d="M8 20v-6M12 20V9M16 20v-9"/></svg><span class="pipe-name">Grafana + SNS</span><span class="pipe-tag">alerts</span></li>
+                        </ol>
+                    </div>
                         <dl class="project-facts">
                             <div>
                                 <dt>What I built</dt>
@@ -306,17 +349,17 @@
                     <ul class="cert-list">
                         <li>
                             <div>
-                                <p class="cert-name">Azure Databricks Data Engineer Associate</p>
-                                <p class="cert-meta">Microsoft, Oct 2026</p>
-                            </div>
-                            <a href="https://learn.microsoft.com/api/credentials/share/en-in/VarunVaddi-7426/E5BABBD414B03821?sharingId=796B0156FB96045" target="_blank" rel="noopener noreferrer">View credential</a>
-                        </li>
-                        <li>
-                            <div>
                                 <p class="cert-name">Fabric Data Engineer Associate</p>
                                 <p class="cert-meta">Microsoft, Apr 2026</p>
                             </div>
                             <a href="https://learn.microsoft.com/api/credentials/share/en-in/VarunVaddi-7426/D47DFAA0491EC48?sharingId=796B0156FB96045" target="_blank" rel="noopener noreferrer">View credential</a>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="cert-name">Data Visualization in Excel and Power BI</p>
+                                <p class="cert-meta">HPE DSI, Dec 2025</p>
+                            </div>
+                            <a href="https://badges.parchment.com/public/assertions/JABMbEVHQjKlFmiOroET_A?identity__email=vvaddi2%40CougarNet.UH.EDU" target="_blank" rel="noopener noreferrer">View credential</a>
                         </li>
                         <li>
                             <div>
@@ -331,6 +374,13 @@
                                 <p class="cert-meta">Oracle, Oct 2025</p>
                             </div>
                             <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=41680D7C3EA53B05632F88F088F246B86906BF4DEE659072BC1E6A6F1E835B8B" target="_blank" rel="noopener noreferrer">View credential</a>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="cert-name">SQL (Advanced)</p>
+                                <p class="cert-meta">HackerRank, Jul 2025</p>
+                            </div>
+                            <a href="https://www.hackerrank.com/certificates/f7c05880dd10" target="_blank" rel="noopener noreferrer">View credential</a>
                         </li>
                         <li>
                             <div>
@@ -351,7 +401,7 @@
                 <dl class="toolbox">
                     <div>
                         <dt>Languages</dt>
-                        <dd><ul class="chips"><li>Python</li><li>SQL</li><li>PySpark</li><li>R</li><li>Java</li><li>PostgreSQL</li><li>NoSQL</li><li>C</li></ul></dd>
+                        <dd><ul class="chips"><li>Python</li><li>SQL</li><li>PySpark</li><li>R</li><li>Java</li><li>PostgreSQL</li><li>NoSQL</li></ul></dd>
                     </div>
                     <div>
                         <dt>Data engineering</dt>
@@ -359,7 +409,7 @@
                     </div>
                     <div>
                         <dt>Machine learning and AI</dt>
-                        <dd><ul class="chips"><li>Machine learning</li><li>Deep learning</li><li>NLP and transformers</li><li>LLMs and RAG</li><li>Generative AI</li><li>RecSys</li><li>Forecasting</li><li>MLOps</li><li>SageMaker</li><li>MLflow</li></ul></dd>
+                        <dd><ul class="chips"><li>Machine learning</li><li>Deep learning</li><li>NLP and transformers</li><li>LLMs and RAG</li><li>Generative AI</li><li>MLOps</li><li>SageMaker</li><li>MLflow</li></ul></dd>
                     </div>
                     <div>
                         <dt>Cloud and reporting</dt>
